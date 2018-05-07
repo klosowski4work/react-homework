@@ -1,0 +1,12 @@
+.header {
+    background-size: cover;
+    width: 100%;
+    min-height: 30rem;
+    display: inline-flex;
+    justify-content: center;
+    &__container {
+        width: 70%;
+        min-width: 70rem;
+        margin-top: 1.5rem;
+    }
+}

@@ -1,0 +1,22 @@
+@import '../../components/common/style/colors.scss';
+.results {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__header {
+        width: 100%;
+        padding: 0 15%;
+        display: inline-flex;
+        background-color: $color-light-grey;
+        justify-content: space-between;
+        color: $color-dark-grey;
+    }
+    &__container {
+        width: 70%;
+        min-width: 70rem;
+        margin-top: 1.5rem;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}

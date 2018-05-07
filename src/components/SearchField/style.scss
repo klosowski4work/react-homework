@@ -1,0 +1,12 @@
+@import '../common/style/_colors.scss';
+.search-field {
+    &__input {
+        width: 100%;
+        color: $color-white;
+        background: $color-black;
+        padding: 1rem;
+        font-family: monospace;
+        border: 0;
+        border-bottom: 1px solid $color-main;
+    }
+}

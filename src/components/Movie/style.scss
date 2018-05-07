@@ -1,0 +1,33 @@
+@import '../common/style/_colors.scss';
+.movie {
+    margin: 2rem;
+    color: $color-grey;
+    &__cover {
+        background-color: $color-dark-grey;
+        width: 20rem;
+        height: 30rem;
+    }
+    &__footer {
+        position: relative;
+    }
+    &__title {
+        padding: 0.7rem;
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+    &__type {
+        padding: 0 0.7rem;
+        font-size: 0.8rem;
+    }
+    &__release-date {
+        position: absolute;
+        right: 0;
+        top: 0;
+        border: 1px solid $color-grey;
+        margin: 0.5rem;
+        padding: 0.2rem 0.8rem;
+        line-height: 0.8rem;
+        font-size: 0.8rem;
+        border-radius: 3px;
+    }
+}

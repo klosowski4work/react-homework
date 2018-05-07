@@ -1,0 +1,28 @@
+@import '../common/style/_colors.scss';
+.button {
+    cursor: pointer;
+    background-color: $color-main;
+    padding: 0.5rem 5rem;
+    font-family: monospace;
+    color: $color-white;
+    border: 0;
+    border-radius: 3px;
+    &--small {
+        padding: 0.3rem 2rem;
+        font-size: 1.2rem;
+    }
+    &--grey {
+        background-color: $color-dark-grey;
+    }
+}
+
+.button-link {
+    cursor: pointer;
+    color: $color-main;
+    background-color: transparent;
+    color: $color-main;
+    border: 0;
+    &--grey {
+        color: $color-dark-grey;
+    }
+}
