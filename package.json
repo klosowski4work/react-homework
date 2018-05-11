@@ -7,7 +7,8 @@
     "start": "webpack-dev-server",
     "build": "webpack --env.mode=production",
     "test": "jest",
-    "test:watch": "jest -u --watch"
+    "test:watch": "jest -u --watch",
+    "cypress": "node_modules/.bin/cypress open"
   },
   "author": "piotr_klosowski@epam.com",
   "license": "ISC",
@@ -19,6 +20,7 @@
     "redux": "^4.0.0"
   },
   "devDependencies": {
+    "ajv": "^6.5.0",
     "babel": "^6.23.0",
     "babel-core": "^6.26.0",
     "babel-jest": "^22.4.3",
@@ -26,6 +28,7 @@
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "css-loader": "^0.28.11",
+    "cypress": "^2.1.0",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
     "enzyme-to-json": "^3.3.3",
@@ -41,7 +44,7 @@
     "react-test-renderer": "^16.3.2",
     "sass-loader": "^7.0.1",
     "sass-webpack-plugin": "^1.0.1",
-    "webpack": "^4.6.0",
+    "webpack": "^4.8.1",
     "webpack-cli": "^2.0.15",
     "webpack-dev-server": "^3.1.3"
   },
