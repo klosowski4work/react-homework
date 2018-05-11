@@ -2,8 +2,12 @@
 .movie {
     margin: 2rem;
     color: $color-grey;
-    &__cover {
-        background-color: $color-dark-grey;
+    width: 20rem;
+    border: 1px solid #eeeeee;
+    border-radius: 5px;
+    overflow: hidden;
+    &__cover,
+    &__cover>img {
         width: 20rem;
         height: 30rem;
     }
@@ -12,11 +16,13 @@
     }
     &__title {
         padding: 0.7rem;
+        padding-right: 3.5rem;
         font-size: 1.2rem;
         font-weight: bold;
+        height: 4.2rem;
     }
     &__type {
-        padding: 0 0.7rem;
+        padding: 0.25rem 0.7rem;
         font-size: 0.8rem;
     }
     &__release-date {
@@ -25,9 +31,13 @@
         top: 0;
         border: 1px solid $color-grey;
         margin: 0.5rem;
-        padding: 0.2rem 0.8rem;
+        padding: 0.25rem 0.65rem;
         line-height: 0.8rem;
         font-size: 0.8rem;
         border-radius: 3px;
+    }
+    &--empty {
+        height: 0px;
+        border: 0;
     }
 }

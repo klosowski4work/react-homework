@@ -12,11 +12,12 @@
         color: $color-dark-grey;
     }
     &__container {
-        width: 70%;
+        width: 80%;
         min-width: 70rem;
+        max-width: 140rem;
         margin-top: 1.5rem;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         flex-wrap: wrap;
     }
 }

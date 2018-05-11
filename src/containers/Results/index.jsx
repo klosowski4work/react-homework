@@ -3,6 +3,7 @@ import React from 'react';
 import { SortBy } from '../SortBy';
 import { Movie } from '../../components/Movie';
 import './style.scss';
+import { MoviesService } from '../../services/movies.service';
 
 export class Results extends React.Component {
     constructor(params) {
@@ -13,18 +14,15 @@ export class Results extends React.Component {
     }
 
     componentDidMount() {
-        this.setState({
-            results: [
-                { title: 'Test1', type: "type", releaseDate: "2018", cover: "" },
-                { title: 'Test2', type: "type", releaseDate: "2018", cover: "" },
-                { title: 'Test3', type: "type", releaseDate: "2018", cover: "" },
-                { title: 'Test4', type: "type", releaseDate: "2018", cover: "" },
-                { title: 'Test5', type: "type", releaseDate: "2018", cover: "" },
-            ]
+        MoviesService.getMovies().then(movies => {
+            this.setState({
+                results: movies,
+            });
         });
     }
 
     render() {
+        const emptyElements = [1, 2, 3, 4];
         return <div className="results">
             <div className="results__header">
                 <span>x movies found</span>
@@ -36,10 +34,15 @@ export class Results extends React.Component {
                         return <Movie
                             key={index}
                             title={movie.title}
-                            type={movie.type}
+                            type={movie.genres}
                             cover={movie.cover}
-                            releaseDate={movie.releaseDate}
+                            releaseDate={movie.releaseYear}
                         />
+                    })
+                }
+                {
+                    emptyElements.map((key) => {
+                        return <div key={key} className="movie movie--empty"></div>
                     })
                 }
             </div>
