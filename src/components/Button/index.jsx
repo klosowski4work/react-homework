@@ -5,14 +5,12 @@ export class Button extends React.Component {
     constructor(params) {
         super(params);
     }
-
     render() {
         return <React.Fragment>
             <button
                 className={this.className}
                 type="button"
-                onClick={() => this.props.onClick()}
-            >
+                onClick={() => this.props.onClick()}>
                 {this.props.text}
             </button>
         </React.Fragment >;
@@ -26,7 +24,6 @@ export class Button extends React.Component {
 
 };
 Button.defaultProps = {
-    onClick: () => '',
     text: 'click me',
     size: '',
     color: '',

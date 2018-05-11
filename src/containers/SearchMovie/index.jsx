@@ -4,7 +4,7 @@ import { Button } from '../../components/Button';
 import { SearchField } from '../../components/SearchField';
 import './style.scss';
 
-const SEARCH_BY = {
+export const SEARCH_BY = {
     TITLE: 'title',
     GENRE: 'genre',
 }

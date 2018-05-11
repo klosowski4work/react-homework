@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer component should render component 1`] = `
+<div
+  className="footer"
+>
+  <span
+    className="logo"
+  >
+    netflixroulette
+  </span>
+</div>
+`;

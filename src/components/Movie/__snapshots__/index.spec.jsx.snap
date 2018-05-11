@@ -1,0 +1,2551 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Movie component should render component 1`] = `
+ReactWrapper {
+  "length": 1,
+  Symbol(enzyme.__unrendered__): <Movie
+    cover=""
+    release-date="2018"
+    releaseDate=""
+    title="test movie"
+    type="scientific film"
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__node__): Object {
+    "instance": Movie {
+      "_reactInternalFiber": FiberNode {
+        "_debugID": 5,
+        "_debugIsCurrentlyTiming": false,
+        "_debugOwner": FiberNode {
+          "_debugID": 4,
+          "_debugIsCurrentlyTiming": false,
+          "_debugOwner": null,
+          "_debugSource": null,
+          "alternate": null,
+          "child": [Circular],
+          "effectTag": 1,
+          "expirationTime": 0,
+          "firstEffect": null,
+          "index": 0,
+          "key": null,
+          "lastEffect": null,
+          "memoizedProps": Object {
+            "Component": [Function],
+            "context": null,
+            "props": Object {
+              "cover": "",
+              "release-date": "2018",
+              "releaseDate": "",
+              "title": "test movie",
+              "type": "scientific film",
+            },
+          },
+          "memoizedState": Object {
+            "context": null,
+            "mount": true,
+            "props": Object {
+              "cover": "",
+              "release-date": "2018",
+              "releaseDate": "",
+              "title": "test movie",
+              "type": "scientific film",
+            },
+          },
+          "mode": 0,
+          "nextEffect": null,
+          "pendingProps": Object {
+            "Component": [Function],
+            "context": null,
+            "props": Object {
+              "cover": "",
+              "release-date": "2018",
+              "releaseDate": "",
+              "title": "test movie",
+              "type": "scientific film",
+            },
+          },
+          "ref": null,
+          "return": FiberNode {
+            "_debugID": 1,
+            "_debugIsCurrentlyTiming": false,
+            "_debugOwner": null,
+            "_debugSource": null,
+            "alternate": FiberNode {
+              "_debugID": 1,
+              "_debugIsCurrentlyTiming": false,
+              "_debugOwner": null,
+              "_debugSource": null,
+              "alternate": [Circular],
+              "child": null,
+              "effectTag": 0,
+              "expirationTime": 1,
+              "firstEffect": null,
+              "index": 0,
+              "key": null,
+              "lastEffect": null,
+              "memoizedProps": null,
+              "memoizedState": null,
+              "mode": 0,
+              "nextEffect": null,
+              "pendingProps": null,
+              "ref": null,
+              "return": null,
+              "sibling": null,
+              "stateNode": Object {
+                "containerInfo": <div>
+                  <div
+                    class="movie"
+                  >
+                    <div
+                      class="movie__cover"
+                    >
+                      <img
+                        src=""
+                      />
+                    </div>
+                    <div
+                      class="movie__footer"
+                    >
+                      <div
+                        class="movie__title"
+                      >
+                        test movie
+                      </div>
+                      <div
+                        class="movie__type"
+                      >
+                        scientific film
+                      </div>
+                      <div
+                        class="movie__release-date"
+                      />
+                    </div>
+                  </div>
+                </div>,
+                "context": Object {},
+                "current": [Circular],
+                "finishedWork": null,
+                "firstBatch": null,
+                "hydrate": false,
+                "nextScheduledRoot": null,
+                "pendingChildren": null,
+                "pendingCommitExpirationTime": 0,
+                "pendingContext": null,
+                "remainingExpirationTime": 0,
+              },
+              "tag": 3,
+              "type": null,
+              "updateQueue": Object {
+                "baseState": null,
+                "callbackList": null,
+                "capturedValues": null,
+                "expirationTime": 1,
+                "first": Object {
+                  "callback": null,
+                  "capturedValue": null,
+                  "expirationTime": 1,
+                  "isForced": false,
+                  "isReplace": false,
+                  "next": null,
+                  "partialState": Object {
+                    "element": <WrapperComponent
+                      Component={[Function]}
+                      context={null}
+                      props={
+                        Object {
+                          "cover": "",
+                          "release-date": "2018",
+                          "releaseDate": "",
+                          "title": "test movie",
+                          "type": "scientific film",
+                        }
+                      }
+                    />,
+                  },
+                },
+                "hasForceUpdate": false,
+                "isInitialized": false,
+                "isProcessing": false,
+                "last": Object {
+                  "callback": null,
+                  "capturedValue": null,
+                  "expirationTime": 1,
+                  "isForced": false,
+                  "isReplace": false,
+                  "next": null,
+                  "partialState": Object {
+                    "element": <WrapperComponent
+                      Component={[Function]}
+                      context={null}
+                      props={
+                        Object {
+                          "cover": "",
+                          "release-date": "2018",
+                          "releaseDate": "",
+                          "title": "test movie",
+                          "type": "scientific film",
+                        }
+                      }
+                    />,
+                  },
+                },
+              },
+            },
+            "child": [Circular],
+            "effectTag": 32,
+            "expirationTime": 0,
+            "firstEffect": [Circular],
+            "index": 0,
+            "key": null,
+            "lastEffect": [Circular],
+            "memoizedProps": null,
+            "memoizedState": Object {
+              "element": <WrapperComponent
+                Component={[Function]}
+                context={null}
+                props={
+                  Object {
+                    "cover": "",
+                    "release-date": "2018",
+                    "releaseDate": "",
+                    "title": "test movie",
+                    "type": "scientific film",
+                  }
+                }
+              />,
+            },
+            "mode": 0,
+            "nextEffect": null,
+            "pendingProps": null,
+            "ref": null,
+            "return": null,
+            "sibling": null,
+            "stateNode": Object {
+              "containerInfo": <div>
+                <div
+                  class="movie"
+                >
+                  <div
+                    class="movie__cover"
+                  >
+                    <img
+                      src=""
+                    />
+                  </div>
+                  <div
+                    class="movie__footer"
+                  >
+                    <div
+                      class="movie__title"
+                    >
+                      test movie
+                    </div>
+                    <div
+                      class="movie__type"
+                    >
+                      scientific film
+                    </div>
+                    <div
+                      class="movie__release-date"
+                    />
+                  </div>
+                </div>
+              </div>,
+              "context": Object {},
+              "current": [Circular],
+              "finishedWork": null,
+              "firstBatch": null,
+              "hydrate": false,
+              "nextScheduledRoot": null,
+              "pendingChildren": null,
+              "pendingCommitExpirationTime": 0,
+              "pendingContext": null,
+              "remainingExpirationTime": 0,
+            },
+            "tag": 3,
+            "type": null,
+            "updateQueue": Object {
+              "baseState": Object {
+                "element": <WrapperComponent
+                  Component={[Function]}
+                  context={null}
+                  props={
+                    Object {
+                      "cover": "",
+                      "release-date": "2018",
+                      "releaseDate": "",
+                      "title": "test movie",
+                      "type": "scientific film",
+                    }
+                  }
+                />,
+              },
+              "callbackList": null,
+              "capturedValues": null,
+              "expirationTime": 0,
+              "first": null,
+              "hasForceUpdate": false,
+              "isInitialized": true,
+              "isProcessing": false,
+              "last": null,
+            },
+          },
+          "sibling": null,
+          "stateNode": WrapperComponent {
+            "_reactInternalFiber": [Circular],
+            "_reactInternalInstance": Object {},
+            "context": Object {},
+            "props": Object {
+              "Component": [Function],
+              "context": null,
+              "props": Object {
+                "cover": "",
+                "release-date": "2018",
+                "releaseDate": "",
+                "title": "test movie",
+                "type": "scientific film",
+              },
+            },
+            "refs": Object {},
+            "state": Object {
+              "context": null,
+              "mount": true,
+              "props": Object {
+                "cover": "",
+                "release-date": "2018",
+                "releaseDate": "",
+                "title": "test movie",
+                "type": "scientific film",
+              },
+            },
+            "updater": Object {
+              "enqueueForceUpdate": [Function],
+              "enqueueReplaceState": [Function],
+              "enqueueSetState": [Function],
+              "isMounted": [Function],
+            },
+          },
+          "tag": 2,
+          "type": [Function],
+          "updateQueue": null,
+        },
+        "_debugSource": null,
+        "alternate": null,
+        "child": FiberNode {
+          "_debugID": 6,
+          "_debugIsCurrentlyTiming": false,
+          "_debugOwner": [Circular],
+          "_debugSource": null,
+          "alternate": null,
+          "child": FiberNode {
+            "_debugID": 7,
+            "_debugIsCurrentlyTiming": false,
+            "_debugOwner": [Circular],
+            "_debugSource": null,
+            "alternate": null,
+            "child": FiberNode {
+              "_debugID": 9,
+              "_debugIsCurrentlyTiming": false,
+              "_debugOwner": [Circular],
+              "_debugSource": null,
+              "alternate": null,
+              "child": null,
+              "effectTag": 0,
+              "expirationTime": 0,
+              "firstEffect": null,
+              "index": 0,
+              "key": null,
+              "lastEffect": null,
+              "memoizedProps": Object {
+                "src": "",
+              },
+              "memoizedState": null,
+              "mode": 0,
+              "nextEffect": null,
+              "pendingProps": Object {
+                "src": "",
+              },
+              "ref": null,
+              "return": [Circular],
+              "sibling": null,
+              "stateNode": <img
+                src=""
+              />,
+              "tag": 5,
+              "type": "img",
+              "updateQueue": null,
+            },
+            "effectTag": 0,
+            "expirationTime": 0,
+            "firstEffect": null,
+            "index": 0,
+            "key": null,
+            "lastEffect": null,
+            "memoizedProps": Object {
+              "children": <img
+                src=""
+              />,
+              "className": "movie__cover",
+            },
+            "memoizedState": null,
+            "mode": 0,
+            "nextEffect": null,
+            "pendingProps": Object {
+              "children": <img
+                src=""
+              />,
+              "className": "movie__cover",
+            },
+            "ref": null,
+            "return": [Circular],
+            "sibling": FiberNode {
+              "_debugID": 8,
+              "_debugIsCurrentlyTiming": false,
+              "_debugOwner": [Circular],
+              "_debugSource": null,
+              "alternate": null,
+              "child": FiberNode {
+                "_debugID": 10,
+                "_debugIsCurrentlyTiming": false,
+                "_debugOwner": [Circular],
+                "_debugSource": null,
+                "alternate": null,
+                "child": null,
+                "effectTag": 0,
+                "expirationTime": 0,
+                "firstEffect": null,
+                "index": 0,
+                "key": null,
+                "lastEffect": null,
+                "memoizedProps": Object {
+                  "children": "test movie",
+                  "className": "movie__title",
+                },
+                "memoizedState": null,
+                "mode": 0,
+                "nextEffect": null,
+                "pendingProps": Object {
+                  "children": "test movie",
+                  "className": "movie__title",
+                },
+                "ref": null,
+                "return": [Circular],
+                "sibling": FiberNode {
+                  "_debugID": 11,
+                  "_debugIsCurrentlyTiming": false,
+                  "_debugOwner": [Circular],
+                  "_debugSource": null,
+                  "alternate": null,
+                  "child": null,
+                  "effectTag": 0,
+                  "expirationTime": 0,
+                  "firstEffect": null,
+                  "index": 1,
+                  "key": null,
+                  "lastEffect": null,
+                  "memoizedProps": Object {
+                    "children": "scientific film",
+                    "className": "movie__type",
+                  },
+                  "memoizedState": null,
+                  "mode": 0,
+                  "nextEffect": null,
+                  "pendingProps": Object {
+                    "children": "scientific film",
+                    "className": "movie__type",
+                  },
+                  "ref": null,
+                  "return": [Circular],
+                  "sibling": FiberNode {
+                    "_debugID": 12,
+                    "_debugIsCurrentlyTiming": false,
+                    "_debugOwner": [Circular],
+                    "_debugSource": null,
+                    "alternate": null,
+                    "child": null,
+                    "effectTag": 0,
+                    "expirationTime": 0,
+                    "firstEffect": null,
+                    "index": 2,
+                    "key": null,
+                    "lastEffect": null,
+                    "memoizedProps": Object {
+                      "children": "",
+                      "className": "movie__release-date",
+                    },
+                    "memoizedState": null,
+                    "mode": 0,
+                    "nextEffect": null,
+                    "pendingProps": Object {
+                      "children": "",
+                      "className": "movie__release-date",
+                    },
+                    "ref": null,
+                    "return": [Circular],
+                    "sibling": null,
+                    "stateNode": <div
+                      class="movie__release-date"
+                    />,
+                    "tag": 5,
+                    "type": "div",
+                    "updateQueue": null,
+                  },
+                  "stateNode": <div
+                    class="movie__type"
+                  >
+                    scientific film
+                  </div>,
+                  "tag": 5,
+                  "type": "div",
+                  "updateQueue": null,
+                },
+                "stateNode": <div
+                  class="movie__title"
+                >
+                  test movie
+                </div>,
+                "tag": 5,
+                "type": "div",
+                "updateQueue": null,
+              },
+              "effectTag": 0,
+              "expirationTime": 0,
+              "firstEffect": null,
+              "index": 1,
+              "key": null,
+              "lastEffect": null,
+              "memoizedProps": Object {
+                "children": Array [
+                  <div
+                    className="movie__title"
+                  >
+                    test movie
+                  </div>,
+                  <div
+                    className="movie__type"
+                  >
+                    scientific film
+                  </div>,
+                  <div
+                    className="movie__release-date"
+                  >
+                    
+                  </div>,
+                ],
+                "className": "movie__footer",
+              },
+              "memoizedState": null,
+              "mode": 0,
+              "nextEffect": null,
+              "pendingProps": Object {
+                "children": Array [
+                  <div
+                    className="movie__title"
+                  >
+                    test movie
+                  </div>,
+                  <div
+                    className="movie__type"
+                  >
+                    scientific film
+                  </div>,
+                  <div
+                    className="movie__release-date"
+                  >
+                    
+                  </div>,
+                ],
+                "className": "movie__footer",
+              },
+              "ref": null,
+              "return": [Circular],
+              "sibling": null,
+              "stateNode": <div
+                class="movie__footer"
+              >
+                <div
+                  class="movie__title"
+                >
+                  test movie
+                </div>
+                <div
+                  class="movie__type"
+                >
+                  scientific film
+                </div>
+                <div
+                  class="movie__release-date"
+                />
+              </div>,
+              "tag": 5,
+              "type": "div",
+              "updateQueue": null,
+            },
+            "stateNode": <div
+              class="movie__cover"
+            >
+              <img
+                src=""
+              />
+            </div>,
+            "tag": 5,
+            "type": "div",
+            "updateQueue": null,
+          },
+          "effectTag": 0,
+          "expirationTime": 0,
+          "firstEffect": null,
+          "index": 0,
+          "key": null,
+          "lastEffect": null,
+          "memoizedProps": Object {
+            "children": Array [
+              <div
+                className="movie__cover"
+              >
+                <img
+                  src=""
+                />
+              </div>,
+              <div
+                className="movie__footer"
+              >
+                <div
+                  className="movie__title"
+                >
+                  test movie
+                </div>
+                <div
+                  className="movie__type"
+                >
+                  scientific film
+                </div>
+                <div
+                  className="movie__release-date"
+                >
+                  
+                </div>
+              </div>,
+            ],
+            "className": "movie",
+          },
+          "memoizedState": null,
+          "mode": 0,
+          "nextEffect": null,
+          "pendingProps": Object {
+            "children": Array [
+              <div
+                className="movie__cover"
+              >
+                <img
+                  src=""
+                />
+              </div>,
+              <div
+                className="movie__footer"
+              >
+                <div
+                  className="movie__title"
+                >
+                  test movie
+                </div>
+                <div
+                  className="movie__type"
+                >
+                  scientific film
+                </div>
+                <div
+                  className="movie__release-date"
+                >
+                  
+                </div>
+              </div>,
+            ],
+            "className": "movie",
+          },
+          "ref": null,
+          "return": [Circular],
+          "sibling": null,
+          "stateNode": <div
+            class="movie"
+          >
+            <div
+              class="movie__cover"
+            >
+              <img
+                src=""
+              />
+            </div>
+            <div
+              class="movie__footer"
+            >
+              <div
+                class="movie__title"
+              >
+                test movie
+              </div>
+              <div
+                class="movie__type"
+              >
+                scientific film
+              </div>
+              <div
+                class="movie__release-date"
+              />
+            </div>
+          </div>,
+          "tag": 5,
+          "type": "div",
+          "updateQueue": null,
+        },
+        "effectTag": 1,
+        "expirationTime": 0,
+        "firstEffect": null,
+        "index": 0,
+        "key": null,
+        "lastEffect": null,
+        "memoizedProps": Object {
+          "cover": "",
+          "release-date": "2018",
+          "releaseDate": "",
+          "title": "test movie",
+          "type": "scientific film",
+        },
+        "memoizedState": null,
+        "mode": 0,
+        "nextEffect": null,
+        "pendingProps": Object {
+          "cover": "",
+          "release-date": "2018",
+          "releaseDate": "",
+          "title": "test movie",
+          "type": "scientific film",
+        },
+        "ref": null,
+        "return": FiberNode {
+          "_debugID": 4,
+          "_debugIsCurrentlyTiming": false,
+          "_debugOwner": null,
+          "_debugSource": null,
+          "alternate": null,
+          "child": [Circular],
+          "effectTag": 1,
+          "expirationTime": 0,
+          "firstEffect": null,
+          "index": 0,
+          "key": null,
+          "lastEffect": null,
+          "memoizedProps": Object {
+            "Component": [Function],
+            "context": null,
+            "props": Object {
+              "cover": "",
+              "release-date": "2018",
+              "releaseDate": "",
+              "title": "test movie",
+              "type": "scientific film",
+            },
+          },
+          "memoizedState": Object {
+            "context": null,
+            "mount": true,
+            "props": Object {
+              "cover": "",
+              "release-date": "2018",
+              "releaseDate": "",
+              "title": "test movie",
+              "type": "scientific film",
+            },
+          },
+          "mode": 0,
+          "nextEffect": null,
+          "pendingProps": Object {
+            "Component": [Function],
+            "context": null,
+            "props": Object {
+              "cover": "",
+              "release-date": "2018",
+              "releaseDate": "",
+              "title": "test movie",
+              "type": "scientific film",
+            },
+          },
+          "ref": null,
+          "return": FiberNode {
+            "_debugID": 1,
+            "_debugIsCurrentlyTiming": false,
+            "_debugOwner": null,
+            "_debugSource": null,
+            "alternate": FiberNode {
+              "_debugID": 1,
+              "_debugIsCurrentlyTiming": false,
+              "_debugOwner": null,
+              "_debugSource": null,
+              "alternate": [Circular],
+              "child": null,
+              "effectTag": 0,
+              "expirationTime": 1,
+              "firstEffect": null,
+              "index": 0,
+              "key": null,
+              "lastEffect": null,
+              "memoizedProps": null,
+              "memoizedState": null,
+              "mode": 0,
+              "nextEffect": null,
+              "pendingProps": null,
+              "ref": null,
+              "return": null,
+              "sibling": null,
+              "stateNode": Object {
+                "containerInfo": <div>
+                  <div
+                    class="movie"
+                  >
+                    <div
+                      class="movie__cover"
+                    >
+                      <img
+                        src=""
+                      />
+                    </div>
+                    <div
+                      class="movie__footer"
+                    >
+                      <div
+                        class="movie__title"
+                      >
+                        test movie
+                      </div>
+                      <div
+                        class="movie__type"
+                      >
+                        scientific film
+                      </div>
+                      <div
+                        class="movie__release-date"
+                      />
+                    </div>
+                  </div>
+                </div>,
+                "context": Object {},
+                "current": [Circular],
+                "finishedWork": null,
+                "firstBatch": null,
+                "hydrate": false,
+                "nextScheduledRoot": null,
+                "pendingChildren": null,
+                "pendingCommitExpirationTime": 0,
+                "pendingContext": null,
+                "remainingExpirationTime": 0,
+              },
+              "tag": 3,
+              "type": null,
+              "updateQueue": Object {
+                "baseState": null,
+                "callbackList": null,
+                "capturedValues": null,
+                "expirationTime": 1,
+                "first": Object {
+                  "callback": null,
+                  "capturedValue": null,
+                  "expirationTime": 1,
+                  "isForced": false,
+                  "isReplace": false,
+                  "next": null,
+                  "partialState": Object {
+                    "element": <WrapperComponent
+                      Component={[Function]}
+                      context={null}
+                      props={
+                        Object {
+                          "cover": "",
+                          "release-date": "2018",
+                          "releaseDate": "",
+                          "title": "test movie",
+                          "type": "scientific film",
+                        }
+                      }
+                    />,
+                  },
+                },
+                "hasForceUpdate": false,
+                "isInitialized": false,
+                "isProcessing": false,
+                "last": Object {
+                  "callback": null,
+                  "capturedValue": null,
+                  "expirationTime": 1,
+                  "isForced": false,
+                  "isReplace": false,
+                  "next": null,
+                  "partialState": Object {
+                    "element": <WrapperComponent
+                      Component={[Function]}
+                      context={null}
+                      props={
+                        Object {
+                          "cover": "",
+                          "release-date": "2018",
+                          "releaseDate": "",
+                          "title": "test movie",
+                          "type": "scientific film",
+                        }
+                      }
+                    />,
+                  },
+                },
+              },
+            },
+            "child": [Circular],
+            "effectTag": 32,
+            "expirationTime": 0,
+            "firstEffect": [Circular],
+            "index": 0,
+            "key": null,
+            "lastEffect": [Circular],
+            "memoizedProps": null,
+            "memoizedState": Object {
+              "element": <WrapperComponent
+                Component={[Function]}
+                context={null}
+                props={
+                  Object {
+                    "cover": "",
+                    "release-date": "2018",
+                    "releaseDate": "",
+                    "title": "test movie",
+                    "type": "scientific film",
+                  }
+                }
+              />,
+            },
+            "mode": 0,
+            "nextEffect": null,
+            "pendingProps": null,
+            "ref": null,
+            "return": null,
+            "sibling": null,
+            "stateNode": Object {
+              "containerInfo": <div>
+                <div
+                  class="movie"
+                >
+                  <div
+                    class="movie__cover"
+                  >
+                    <img
+                      src=""
+                    />
+                  </div>
+                  <div
+                    class="movie__footer"
+                  >
+                    <div
+                      class="movie__title"
+                    >
+                      test movie
+                    </div>
+                    <div
+                      class="movie__type"
+                    >
+                      scientific film
+                    </div>
+                    <div
+                      class="movie__release-date"
+                    />
+                  </div>
+                </div>
+              </div>,
+              "context": Object {},
+              "current": [Circular],
+              "finishedWork": null,
+              "firstBatch": null,
+              "hydrate": false,
+              "nextScheduledRoot": null,
+              "pendingChildren": null,
+              "pendingCommitExpirationTime": 0,
+              "pendingContext": null,
+              "remainingExpirationTime": 0,
+            },
+            "tag": 3,
+            "type": null,
+            "updateQueue": Object {
+              "baseState": Object {
+                "element": <WrapperComponent
+                  Component={[Function]}
+                  context={null}
+                  props={
+                    Object {
+                      "cover": "",
+                      "release-date": "2018",
+                      "releaseDate": "",
+                      "title": "test movie",
+                      "type": "scientific film",
+                    }
+                  }
+                />,
+              },
+              "callbackList": null,
+              "capturedValues": null,
+              "expirationTime": 0,
+              "first": null,
+              "hasForceUpdate": false,
+              "isInitialized": true,
+              "isProcessing": false,
+              "last": null,
+            },
+          },
+          "sibling": null,
+          "stateNode": WrapperComponent {
+            "_reactInternalFiber": [Circular],
+            "_reactInternalInstance": Object {},
+            "context": Object {},
+            "props": Object {
+              "Component": [Function],
+              "context": null,
+              "props": Object {
+                "cover": "",
+                "release-date": "2018",
+                "releaseDate": "",
+                "title": "test movie",
+                "type": "scientific film",
+              },
+            },
+            "refs": Object {},
+            "state": Object {
+              "context": null,
+              "mount": true,
+              "props": Object {
+                "cover": "",
+                "release-date": "2018",
+                "releaseDate": "",
+                "title": "test movie",
+                "type": "scientific film",
+              },
+            },
+            "updater": Object {
+              "enqueueForceUpdate": [Function],
+              "enqueueReplaceState": [Function],
+              "enqueueSetState": [Function],
+              "isMounted": [Function],
+            },
+          },
+          "tag": 2,
+          "type": [Function],
+          "updateQueue": null,
+        },
+        "sibling": null,
+        "stateNode": [Circular],
+        "tag": 2,
+        "type": [Function],
+        "updateQueue": null,
+      },
+      "_reactInternalInstance": Object {},
+      "context": Object {},
+      "props": Object {
+        "cover": "",
+        "release-date": "2018",
+        "releaseDate": "",
+        "title": "test movie",
+        "type": "scientific film",
+      },
+      "refs": Object {},
+      "state": null,
+      "updater": Object {
+        "enqueueForceUpdate": [Function],
+        "enqueueReplaceState": [Function],
+        "enqueueSetState": [Function],
+        "isMounted": [Function],
+      },
+    },
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "cover": "",
+      "release-date": "2018",
+      "releaseDate": "",
+      "title": "test movie",
+      "type": "scientific film",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": <div
+        class="movie"
+      >
+        <div
+          class="movie__cover"
+        >
+          <img
+            src=""
+          />
+        </div>
+        <div
+          class="movie__footer"
+        >
+          <div
+            class="movie__title"
+          >
+            test movie
+          </div>
+          <div
+            class="movie__type"
+          >
+            scientific film
+          </div>
+          <div
+            class="movie__release-date"
+          />
+        </div>
+      </div>,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="movie__cover"
+          >
+            <img
+              src=""
+            />
+          </div>,
+          <div
+            className="movie__footer"
+          >
+            <div
+              className="movie__title"
+            >
+              test movie
+            </div>
+            <div
+              className="movie__type"
+            >
+              scientific film
+            </div>
+            <div
+              className="movie__release-date"
+            >
+              
+            </div>
+          </div>,
+        ],
+        "className": "movie",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": <div
+            class="movie__cover"
+          >
+            <img
+              src=""
+            />
+          </div>,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <img
+              src=""
+            />,
+            "className": "movie__cover",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": <img
+                src=""
+              />,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "src": "",
+              },
+              "ref": null,
+              "rendered": Array [
+                undefined,
+              ],
+              "type": "img",
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": <div
+            class="movie__footer"
+          >
+            <div
+              class="movie__title"
+            >
+              test movie
+            </div>
+            <div
+              class="movie__type"
+            >
+              scientific film
+            </div>
+            <div
+              class="movie__release-date"
+            />
+          </div>,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="movie__title"
+              >
+                test movie
+              </div>,
+              <div
+                className="movie__type"
+              >
+                scientific film
+              </div>,
+              <div
+                className="movie__release-date"
+              >
+                
+              </div>,
+            ],
+            "className": "movie__footer",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": <div
+                class="movie__title"
+              >
+                test movie
+              </div>,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "test movie",
+                "className": "movie__title",
+              },
+              "ref": null,
+              "rendered": Array [
+                "test movie",
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": <div
+                class="movie__type"
+              >
+                scientific film
+              </div>,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "scientific film",
+                "className": "movie__type",
+              },
+              "ref": null,
+              "rendered": Array [
+                "scientific film",
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": <div
+                class="movie__release-date"
+              />,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "",
+                "className": "movie__release-date",
+              },
+              "ref": null,
+              "rendered": Array [
+                "",
+              ],
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": Movie {
+        "_reactInternalFiber": FiberNode {
+          "_debugID": 5,
+          "_debugIsCurrentlyTiming": false,
+          "_debugOwner": FiberNode {
+            "_debugID": 4,
+            "_debugIsCurrentlyTiming": false,
+            "_debugOwner": null,
+            "_debugSource": null,
+            "alternate": null,
+            "child": [Circular],
+            "effectTag": 1,
+            "expirationTime": 0,
+            "firstEffect": null,
+            "index": 0,
+            "key": null,
+            "lastEffect": null,
+            "memoizedProps": Object {
+              "Component": [Function],
+              "context": null,
+              "props": Object {
+                "cover": "",
+                "release-date": "2018",
+                "releaseDate": "",
+                "title": "test movie",
+                "type": "scientific film",
+              },
+            },
+            "memoizedState": Object {
+              "context": null,
+              "mount": true,
+              "props": Object {
+                "cover": "",
+                "release-date": "2018",
+                "releaseDate": "",
+                "title": "test movie",
+                "type": "scientific film",
+              },
+            },
+            "mode": 0,
+            "nextEffect": null,
+            "pendingProps": Object {
+              "Component": [Function],
+              "context": null,
+              "props": Object {
+                "cover": "",
+                "release-date": "2018",
+                "releaseDate": "",
+                "title": "test movie",
+                "type": "scientific film",
+              },
+            },
+            "ref": null,
+            "return": FiberNode {
+              "_debugID": 1,
+              "_debugIsCurrentlyTiming": false,
+              "_debugOwner": null,
+              "_debugSource": null,
+              "alternate": FiberNode {
+                "_debugID": 1,
+                "_debugIsCurrentlyTiming": false,
+                "_debugOwner": null,
+                "_debugSource": null,
+                "alternate": [Circular],
+                "child": null,
+                "effectTag": 0,
+                "expirationTime": 1,
+                "firstEffect": null,
+                "index": 0,
+                "key": null,
+                "lastEffect": null,
+                "memoizedProps": null,
+                "memoizedState": null,
+                "mode": 0,
+                "nextEffect": null,
+                "pendingProps": null,
+                "ref": null,
+                "return": null,
+                "sibling": null,
+                "stateNode": Object {
+                  "containerInfo": <div>
+                    <div
+                      class="movie"
+                    >
+                      <div
+                        class="movie__cover"
+                      >
+                        <img
+                          src=""
+                        />
+                      </div>
+                      <div
+                        class="movie__footer"
+                      >
+                        <div
+                          class="movie__title"
+                        >
+                          test movie
+                        </div>
+                        <div
+                          class="movie__type"
+                        >
+                          scientific film
+                        </div>
+                        <div
+                          class="movie__release-date"
+                        />
+                      </div>
+                    </div>
+                  </div>,
+                  "context": Object {},
+                  "current": [Circular],
+                  "finishedWork": null,
+                  "firstBatch": null,
+                  "hydrate": false,
+                  "nextScheduledRoot": null,
+                  "pendingChildren": null,
+                  "pendingCommitExpirationTime": 0,
+                  "pendingContext": null,
+                  "remainingExpirationTime": 0,
+                },
+                "tag": 3,
+                "type": null,
+                "updateQueue": Object {
+                  "baseState": null,
+                  "callbackList": null,
+                  "capturedValues": null,
+                  "expirationTime": 1,
+                  "first": Object {
+                    "callback": null,
+                    "capturedValue": null,
+                    "expirationTime": 1,
+                    "isForced": false,
+                    "isReplace": false,
+                    "next": null,
+                    "partialState": Object {
+                      "element": <WrapperComponent
+                        Component={[Function]}
+                        context={null}
+                        props={
+                          Object {
+                            "cover": "",
+                            "release-date": "2018",
+                            "releaseDate": "",
+                            "title": "test movie",
+                            "type": "scientific film",
+                          }
+                        }
+                      />,
+                    },
+                  },
+                  "hasForceUpdate": false,
+                  "isInitialized": false,
+                  "isProcessing": false,
+                  "last": Object {
+                    "callback": null,
+                    "capturedValue": null,
+                    "expirationTime": 1,
+                    "isForced": false,
+                    "isReplace": false,
+                    "next": null,
+                    "partialState": Object {
+                      "element": <WrapperComponent
+                        Component={[Function]}
+                        context={null}
+                        props={
+                          Object {
+                            "cover": "",
+                            "release-date": "2018",
+                            "releaseDate": "",
+                            "title": "test movie",
+                            "type": "scientific film",
+                          }
+                        }
+                      />,
+                    },
+                  },
+                },
+              },
+              "child": [Circular],
+              "effectTag": 32,
+              "expirationTime": 0,
+              "firstEffect": [Circular],
+              "index": 0,
+              "key": null,
+              "lastEffect": [Circular],
+              "memoizedProps": null,
+              "memoizedState": Object {
+                "element": <WrapperComponent
+                  Component={[Function]}
+                  context={null}
+                  props={
+                    Object {
+                      "cover": "",
+                      "release-date": "2018",
+                      "releaseDate": "",
+                      "title": "test movie",
+                      "type": "scientific film",
+                    }
+                  }
+                />,
+              },
+              "mode": 0,
+              "nextEffect": null,
+              "pendingProps": null,
+              "ref": null,
+              "return": null,
+              "sibling": null,
+              "stateNode": Object {
+                "containerInfo": <div>
+                  <div
+                    class="movie"
+                  >
+                    <div
+                      class="movie__cover"
+                    >
+                      <img
+                        src=""
+                      />
+                    </div>
+                    <div
+                      class="movie__footer"
+                    >
+                      <div
+                        class="movie__title"
+                      >
+                        test movie
+                      </div>
+                      <div
+                        class="movie__type"
+                      >
+                        scientific film
+                      </div>
+                      <div
+                        class="movie__release-date"
+                      />
+                    </div>
+                  </div>
+                </div>,
+                "context": Object {},
+                "current": [Circular],
+                "finishedWork": null,
+                "firstBatch": null,
+                "hydrate": false,
+                "nextScheduledRoot": null,
+                "pendingChildren": null,
+                "pendingCommitExpirationTime": 0,
+                "pendingContext": null,
+                "remainingExpirationTime": 0,
+              },
+              "tag": 3,
+              "type": null,
+              "updateQueue": Object {
+                "baseState": Object {
+                  "element": <WrapperComponent
+                    Component={[Function]}
+                    context={null}
+                    props={
+                      Object {
+                        "cover": "",
+                        "release-date": "2018",
+                        "releaseDate": "",
+                        "title": "test movie",
+                        "type": "scientific film",
+                      }
+                    }
+                  />,
+                },
+                "callbackList": null,
+                "capturedValues": null,
+                "expirationTime": 0,
+                "first": null,
+                "hasForceUpdate": false,
+                "isInitialized": true,
+                "isProcessing": false,
+                "last": null,
+              },
+            },
+            "sibling": null,
+            "stateNode": WrapperComponent {
+              "_reactInternalFiber": [Circular],
+              "_reactInternalInstance": Object {},
+              "context": Object {},
+              "props": Object {
+                "Component": [Function],
+                "context": null,
+                "props": Object {
+                  "cover": "",
+                  "release-date": "2018",
+                  "releaseDate": "",
+                  "title": "test movie",
+                  "type": "scientific film",
+                },
+              },
+              "refs": Object {},
+              "state": Object {
+                "context": null,
+                "mount": true,
+                "props": Object {
+                  "cover": "",
+                  "release-date": "2018",
+                  "releaseDate": "",
+                  "title": "test movie",
+                  "type": "scientific film",
+                },
+              },
+              "updater": Object {
+                "enqueueForceUpdate": [Function],
+                "enqueueReplaceState": [Function],
+                "enqueueSetState": [Function],
+                "isMounted": [Function],
+              },
+            },
+            "tag": 2,
+            "type": [Function],
+            "updateQueue": null,
+          },
+          "_debugSource": null,
+          "alternate": null,
+          "child": FiberNode {
+            "_debugID": 6,
+            "_debugIsCurrentlyTiming": false,
+            "_debugOwner": [Circular],
+            "_debugSource": null,
+            "alternate": null,
+            "child": FiberNode {
+              "_debugID": 7,
+              "_debugIsCurrentlyTiming": false,
+              "_debugOwner": [Circular],
+              "_debugSource": null,
+              "alternate": null,
+              "child": FiberNode {
+                "_debugID": 9,
+                "_debugIsCurrentlyTiming": false,
+                "_debugOwner": [Circular],
+                "_debugSource": null,
+                "alternate": null,
+                "child": null,
+                "effectTag": 0,
+                "expirationTime": 0,
+                "firstEffect": null,
+                "index": 0,
+                "key": null,
+                "lastEffect": null,
+                "memoizedProps": Object {
+                  "src": "",
+                },
+                "memoizedState": null,
+                "mode": 0,
+                "nextEffect": null,
+                "pendingProps": Object {
+                  "src": "",
+                },
+                "ref": null,
+                "return": [Circular],
+                "sibling": null,
+                "stateNode": <img
+                  src=""
+                />,
+                "tag": 5,
+                "type": "img",
+                "updateQueue": null,
+              },
+              "effectTag": 0,
+              "expirationTime": 0,
+              "firstEffect": null,
+              "index": 0,
+              "key": null,
+              "lastEffect": null,
+              "memoizedProps": Object {
+                "children": <img
+                  src=""
+                />,
+                "className": "movie__cover",
+              },
+              "memoizedState": null,
+              "mode": 0,
+              "nextEffect": null,
+              "pendingProps": Object {
+                "children": <img
+                  src=""
+                />,
+                "className": "movie__cover",
+              },
+              "ref": null,
+              "return": [Circular],
+              "sibling": FiberNode {
+                "_debugID": 8,
+                "_debugIsCurrentlyTiming": false,
+                "_debugOwner": [Circular],
+                "_debugSource": null,
+                "alternate": null,
+                "child": FiberNode {
+                  "_debugID": 10,
+                  "_debugIsCurrentlyTiming": false,
+                  "_debugOwner": [Circular],
+                  "_debugSource": null,
+                  "alternate": null,
+                  "child": null,
+                  "effectTag": 0,
+                  "expirationTime": 0,
+                  "firstEffect": null,
+                  "index": 0,
+                  "key": null,
+                  "lastEffect": null,
+                  "memoizedProps": Object {
+                    "children": "test movie",
+                    "className": "movie__title",
+                  },
+                  "memoizedState": null,
+                  "mode": 0,
+                  "nextEffect": null,
+                  "pendingProps": Object {
+                    "children": "test movie",
+                    "className": "movie__title",
+                  },
+                  "ref": null,
+                  "return": [Circular],
+                  "sibling": FiberNode {
+                    "_debugID": 11,
+                    "_debugIsCurrentlyTiming": false,
+                    "_debugOwner": [Circular],
+                    "_debugSource": null,
+                    "alternate": null,
+                    "child": null,
+                    "effectTag": 0,
+                    "expirationTime": 0,
+                    "firstEffect": null,
+                    "index": 1,
+                    "key": null,
+                    "lastEffect": null,
+                    "memoizedProps": Object {
+                      "children": "scientific film",
+                      "className": "movie__type",
+                    },
+                    "memoizedState": null,
+                    "mode": 0,
+                    "nextEffect": null,
+                    "pendingProps": Object {
+                      "children": "scientific film",
+                      "className": "movie__type",
+                    },
+                    "ref": null,
+                    "return": [Circular],
+                    "sibling": FiberNode {
+                      "_debugID": 12,
+                      "_debugIsCurrentlyTiming": false,
+                      "_debugOwner": [Circular],
+                      "_debugSource": null,
+                      "alternate": null,
+                      "child": null,
+                      "effectTag": 0,
+                      "expirationTime": 0,
+                      "firstEffect": null,
+                      "index": 2,
+                      "key": null,
+                      "lastEffect": null,
+                      "memoizedProps": Object {
+                        "children": "",
+                        "className": "movie__release-date",
+                      },
+                      "memoizedState": null,
+                      "mode": 0,
+                      "nextEffect": null,
+                      "pendingProps": Object {
+                        "children": "",
+                        "className": "movie__release-date",
+                      },
+                      "ref": null,
+                      "return": [Circular],
+                      "sibling": null,
+                      "stateNode": <div
+                        class="movie__release-date"
+                      />,
+                      "tag": 5,
+                      "type": "div",
+                      "updateQueue": null,
+                    },
+                    "stateNode": <div
+                      class="movie__type"
+                    >
+                      scientific film
+                    </div>,
+                    "tag": 5,
+                    "type": "div",
+                    "updateQueue": null,
+                  },
+                  "stateNode": <div
+                    class="movie__title"
+                  >
+                    test movie
+                  </div>,
+                  "tag": 5,
+                  "type": "div",
+                  "updateQueue": null,
+                },
+                "effectTag": 0,
+                "expirationTime": 0,
+                "firstEffect": null,
+                "index": 1,
+                "key": null,
+                "lastEffect": null,
+                "memoizedProps": Object {
+                  "children": Array [
+                    <div
+                      className="movie__title"
+                    >
+                      test movie
+                    </div>,
+                    <div
+                      className="movie__type"
+                    >
+                      scientific film
+                    </div>,
+                    <div
+                      className="movie__release-date"
+                    >
+                      
+                    </div>,
+                  ],
+                  "className": "movie__footer",
+                },
+                "memoizedState": null,
+                "mode": 0,
+                "nextEffect": null,
+                "pendingProps": Object {
+                  "children": Array [
+                    <div
+                      className="movie__title"
+                    >
+                      test movie
+                    </div>,
+                    <div
+                      className="movie__type"
+                    >
+                      scientific film
+                    </div>,
+                    <div
+                      className="movie__release-date"
+                    >
+                      
+                    </div>,
+                  ],
+                  "className": "movie__footer",
+                },
+                "ref": null,
+                "return": [Circular],
+                "sibling": null,
+                "stateNode": <div
+                  class="movie__footer"
+                >
+                  <div
+                    class="movie__title"
+                  >
+                    test movie
+                  </div>
+                  <div
+                    class="movie__type"
+                  >
+                    scientific film
+                  </div>
+                  <div
+                    class="movie__release-date"
+                  />
+                </div>,
+                "tag": 5,
+                "type": "div",
+                "updateQueue": null,
+              },
+              "stateNode": <div
+                class="movie__cover"
+              >
+                <img
+                  src=""
+                />
+              </div>,
+              "tag": 5,
+              "type": "div",
+              "updateQueue": null,
+            },
+            "effectTag": 0,
+            "expirationTime": 0,
+            "firstEffect": null,
+            "index": 0,
+            "key": null,
+            "lastEffect": null,
+            "memoizedProps": Object {
+              "children": Array [
+                <div
+                  className="movie__cover"
+                >
+                  <img
+                    src=""
+                  />
+                </div>,
+                <div
+                  className="movie__footer"
+                >
+                  <div
+                    className="movie__title"
+                  >
+                    test movie
+                  </div>
+                  <div
+                    className="movie__type"
+                  >
+                    scientific film
+                  </div>
+                  <div
+                    className="movie__release-date"
+                  >
+                    
+                  </div>
+                </div>,
+              ],
+              "className": "movie",
+            },
+            "memoizedState": null,
+            "mode": 0,
+            "nextEffect": null,
+            "pendingProps": Object {
+              "children": Array [
+                <div
+                  className="movie__cover"
+                >
+                  <img
+                    src=""
+                  />
+                </div>,
+                <div
+                  className="movie__footer"
+                >
+                  <div
+                    className="movie__title"
+                  >
+                    test movie
+                  </div>
+                  <div
+                    className="movie__type"
+                  >
+                    scientific film
+                  </div>
+                  <div
+                    className="movie__release-date"
+                  >
+                    
+                  </div>
+                </div>,
+              ],
+              "className": "movie",
+            },
+            "ref": null,
+            "return": [Circular],
+            "sibling": null,
+            "stateNode": <div
+              class="movie"
+            >
+              <div
+                class="movie__cover"
+              >
+                <img
+                  src=""
+                />
+              </div>
+              <div
+                class="movie__footer"
+              >
+                <div
+                  class="movie__title"
+                >
+                  test movie
+                </div>
+                <div
+                  class="movie__type"
+                >
+                  scientific film
+                </div>
+                <div
+                  class="movie__release-date"
+                />
+              </div>
+            </div>,
+            "tag": 5,
+            "type": "div",
+            "updateQueue": null,
+          },
+          "effectTag": 1,
+          "expirationTime": 0,
+          "firstEffect": null,
+          "index": 0,
+          "key": null,
+          "lastEffect": null,
+          "memoizedProps": Object {
+            "cover": "",
+            "release-date": "2018",
+            "releaseDate": "",
+            "title": "test movie",
+            "type": "scientific film",
+          },
+          "memoizedState": null,
+          "mode": 0,
+          "nextEffect": null,
+          "pendingProps": Object {
+            "cover": "",
+            "release-date": "2018",
+            "releaseDate": "",
+            "title": "test movie",
+            "type": "scientific film",
+          },
+          "ref": null,
+          "return": FiberNode {
+            "_debugID": 4,
+            "_debugIsCurrentlyTiming": false,
+            "_debugOwner": null,
+            "_debugSource": null,
+            "alternate": null,
+            "child": [Circular],
+            "effectTag": 1,
+            "expirationTime": 0,
+            "firstEffect": null,
+            "index": 0,
+            "key": null,
+            "lastEffect": null,
+            "memoizedProps": Object {
+              "Component": [Function],
+              "context": null,
+              "props": Object {
+                "cover": "",
+                "release-date": "2018",
+                "releaseDate": "",
+                "title": "test movie",
+                "type": "scientific film",
+              },
+            },
+            "memoizedState": Object {
+              "context": null,
+              "mount": true,
+              "props": Object {
+                "cover": "",
+                "release-date": "2018",
+                "releaseDate": "",
+                "title": "test movie",
+                "type": "scientific film",
+              },
+            },
+            "mode": 0,
+            "nextEffect": null,
+            "pendingProps": Object {
+              "Component": [Function],
+              "context": null,
+              "props": Object {
+                "cover": "",
+                "release-date": "2018",
+                "releaseDate": "",
+                "title": "test movie",
+                "type": "scientific film",
+              },
+            },
+            "ref": null,
+            "return": FiberNode {
+              "_debugID": 1,
+              "_debugIsCurrentlyTiming": false,
+              "_debugOwner": null,
+              "_debugSource": null,
+              "alternate": FiberNode {
+                "_debugID": 1,
+                "_debugIsCurrentlyTiming": false,
+                "_debugOwner": null,
+                "_debugSource": null,
+                "alternate": [Circular],
+                "child": null,
+                "effectTag": 0,
+                "expirationTime": 1,
+                "firstEffect": null,
+                "index": 0,
+                "key": null,
+                "lastEffect": null,
+                "memoizedProps": null,
+                "memoizedState": null,
+                "mode": 0,
+                "nextEffect": null,
+                "pendingProps": null,
+                "ref": null,
+                "return": null,
+                "sibling": null,
+                "stateNode": Object {
+                  "containerInfo": <div>
+                    <div
+                      class="movie"
+                    >
+                      <div
+                        class="movie__cover"
+                      >
+                        <img
+                          src=""
+                        />
+                      </div>
+                      <div
+                        class="movie__footer"
+                      >
+                        <div
+                          class="movie__title"
+                        >
+                          test movie
+                        </div>
+                        <div
+                          class="movie__type"
+                        >
+                          scientific film
+                        </div>
+                        <div
+                          class="movie__release-date"
+                        />
+                      </div>
+                    </div>
+                  </div>,
+                  "context": Object {},
+                  "current": [Circular],
+                  "finishedWork": null,
+                  "firstBatch": null,
+                  "hydrate": false,
+                  "nextScheduledRoot": null,
+                  "pendingChildren": null,
+                  "pendingCommitExpirationTime": 0,
+                  "pendingContext": null,
+                  "remainingExpirationTime": 0,
+                },
+                "tag": 3,
+                "type": null,
+                "updateQueue": Object {
+                  "baseState": null,
+                  "callbackList": null,
+                  "capturedValues": null,
+                  "expirationTime": 1,
+                  "first": Object {
+                    "callback": null,
+                    "capturedValue": null,
+                    "expirationTime": 1,
+                    "isForced": false,
+                    "isReplace": false,
+                    "next": null,
+                    "partialState": Object {
+                      "element": <WrapperComponent
+                        Component={[Function]}
+                        context={null}
+                        props={
+                          Object {
+                            "cover": "",
+                            "release-date": "2018",
+                            "releaseDate": "",
+                            "title": "test movie",
+                            "type": "scientific film",
+                          }
+                        }
+                      />,
+                    },
+                  },
+                  "hasForceUpdate": false,
+                  "isInitialized": false,
+                  "isProcessing": false,
+                  "last": Object {
+                    "callback": null,
+                    "capturedValue": null,
+                    "expirationTime": 1,
+                    "isForced": false,
+                    "isReplace": false,
+                    "next": null,
+                    "partialState": Object {
+                      "element": <WrapperComponent
+                        Component={[Function]}
+                        context={null}
+                        props={
+                          Object {
+                            "cover": "",
+                            "release-date": "2018",
+                            "releaseDate": "",
+                            "title": "test movie",
+                            "type": "scientific film",
+                          }
+                        }
+                      />,
+                    },
+                  },
+                },
+              },
+              "child": [Circular],
+              "effectTag": 32,
+              "expirationTime": 0,
+              "firstEffect": [Circular],
+              "index": 0,
+              "key": null,
+              "lastEffect": [Circular],
+              "memoizedProps": null,
+              "memoizedState": Object {
+                "element": <WrapperComponent
+                  Component={[Function]}
+                  context={null}
+                  props={
+                    Object {
+                      "cover": "",
+                      "release-date": "2018",
+                      "releaseDate": "",
+                      "title": "test movie",
+                      "type": "scientific film",
+                    }
+                  }
+                />,
+              },
+              "mode": 0,
+              "nextEffect": null,
+              "pendingProps": null,
+              "ref": null,
+              "return": null,
+              "sibling": null,
+              "stateNode": Object {
+                "containerInfo": <div>
+                  <div
+                    class="movie"
+                  >
+                    <div
+                      class="movie__cover"
+                    >
+                      <img
+                        src=""
+                      />
+                    </div>
+                    <div
+                      class="movie__footer"
+                    >
+                      <div
+                        class="movie__title"
+                      >
+                        test movie
+                      </div>
+                      <div
+                        class="movie__type"
+                      >
+                        scientific film
+                      </div>
+                      <div
+                        class="movie__release-date"
+                      />
+                    </div>
+                  </div>
+                </div>,
+                "context": Object {},
+                "current": [Circular],
+                "finishedWork": null,
+                "firstBatch": null,
+                "hydrate": false,
+                "nextScheduledRoot": null,
+                "pendingChildren": null,
+                "pendingCommitExpirationTime": 0,
+                "pendingContext": null,
+                "remainingExpirationTime": 0,
+              },
+              "tag": 3,
+              "type": null,
+              "updateQueue": Object {
+                "baseState": Object {
+                  "element": <WrapperComponent
+                    Component={[Function]}
+                    context={null}
+                    props={
+                      Object {
+                        "cover": "",
+                        "release-date": "2018",
+                        "releaseDate": "",
+                        "title": "test movie",
+                        "type": "scientific film",
+                      }
+                    }
+                  />,
+                },
+                "callbackList": null,
+                "capturedValues": null,
+                "expirationTime": 0,
+                "first": null,
+                "hasForceUpdate": false,
+                "isInitialized": true,
+                "isProcessing": false,
+                "last": null,
+              },
+            },
+            "sibling": null,
+            "stateNode": WrapperComponent {
+              "_reactInternalFiber": [Circular],
+              "_reactInternalInstance": Object {},
+              "context": Object {},
+              "props": Object {
+                "Component": [Function],
+                "context": null,
+                "props": Object {
+                  "cover": "",
+                  "release-date": "2018",
+                  "releaseDate": "",
+                  "title": "test movie",
+                  "type": "scientific film",
+                },
+              },
+              "refs": Object {},
+              "state": Object {
+                "context": null,
+                "mount": true,
+                "props": Object {
+                  "cover": "",
+                  "release-date": "2018",
+                  "releaseDate": "",
+                  "title": "test movie",
+                  "type": "scientific film",
+                },
+              },
+              "updater": Object {
+                "enqueueForceUpdate": [Function],
+                "enqueueReplaceState": [Function],
+                "enqueueSetState": [Function],
+                "isMounted": [Function],
+              },
+            },
+            "tag": 2,
+            "type": [Function],
+            "updateQueue": null,
+          },
+          "sibling": null,
+          "stateNode": [Circular],
+          "tag": 2,
+          "type": [Function],
+          "updateQueue": null,
+        },
+        "_reactInternalInstance": Object {},
+        "context": Object {},
+        "props": Object {
+          "cover": "",
+          "release-date": "2018",
+          "releaseDate": "",
+          "title": "test movie",
+          "type": "scientific film",
+        },
+        "refs": Object {},
+        "state": null,
+        "updater": Object {
+          "enqueueForceUpdate": [Function],
+          "enqueueReplaceState": [Function],
+          "enqueueSetState": [Function],
+          "isMounted": [Function],
+        },
+      },
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "cover": "",
+        "release-date": "2018",
+        "releaseDate": "",
+        "title": "test movie",
+        "type": "scientific film",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": <div
+          class="movie"
+        >
+          <div
+            class="movie__cover"
+          >
+            <img
+              src=""
+            />
+          </div>
+          <div
+            class="movie__footer"
+          >
+            <div
+              class="movie__title"
+            >
+              test movie
+            </div>
+            <div
+              class="movie__type"
+            >
+              scientific film
+            </div>
+            <div
+              class="movie__release-date"
+            />
+          </div>
+        </div>,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="movie__cover"
+            >
+              <img
+                src=""
+              />
+            </div>,
+            <div
+              className="movie__footer"
+            >
+              <div
+                className="movie__title"
+              >
+                test movie
+              </div>
+              <div
+                className="movie__type"
+              >
+                scientific film
+              </div>
+              <div
+                className="movie__release-date"
+              >
+                
+              </div>
+            </div>,
+          ],
+          "className": "movie",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": <div
+              class="movie__cover"
+            >
+              <img
+                src=""
+              />
+            </div>,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <img
+                src=""
+              />,
+              "className": "movie__cover",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": <img
+                  src=""
+                />,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "src": "",
+                },
+                "ref": null,
+                "rendered": Array [
+                  undefined,
+                ],
+                "type": "img",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": <div
+              class="movie__footer"
+            >
+              <div
+                class="movie__title"
+              >
+                test movie
+              </div>
+              <div
+                class="movie__type"
+              >
+                scientific film
+              </div>
+              <div
+                class="movie__release-date"
+              />
+            </div>,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <div
+                  className="movie__title"
+                >
+                  test movie
+                </div>,
+                <div
+                  className="movie__type"
+                >
+                  scientific film
+                </div>,
+                <div
+                  className="movie__release-date"
+                >
+                  
+                </div>,
+              ],
+              "className": "movie__footer",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": <div
+                  class="movie__title"
+                >
+                  test movie
+                </div>,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "test movie",
+                  "className": "movie__title",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "test movie",
+                ],
+                "type": "div",
+              },
+              Object {
+                "instance": <div
+                  class="movie__type"
+                >
+                  scientific film
+                </div>,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "scientific film",
+                  "className": "movie__type",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "scientific film",
+                ],
+                "type": "div",
+              },
+              Object {
+                "instance": <div
+                  class="movie__release-date"
+                />,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "",
+                  "className": "movie__release-date",
+                },
+                "ref": null,
+                "rendered": Array [
+                  "",
+                ],
+                "type": "div",
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

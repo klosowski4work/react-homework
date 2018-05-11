@@ -2,10 +2,10 @@
 import React from 'react';
 import { Button } from '../../components/Button';
 
-export class FilmDetails extends React.Component {
+export class MovieDetails extends React.Component {
     render() {
         return <React.Fragment>
-            Film details
+            Movie details
         </React.Fragment>;
     }
 };
