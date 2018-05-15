@@ -2,6 +2,7 @@ const path = require("path");
 const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+require("babel-polyfill");
 
 module.exports = env => {
     const isProduction = false;
@@ -15,7 +16,7 @@ module.exports = env => {
             extensions: [".js", ".jsx"]
         },
 
-        entry: ["./index.jsx"],
+        entry: ["babel-polyfill", "./index.jsx"],
 
         output: {
             filename: "bundle.js",
