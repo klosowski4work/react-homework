@@ -10,12 +10,12 @@ export class SearchField extends React.Component {
             <input
                 className="search-field__input"
                 type="text"
-                onKeyUp={this.handleSearch}
+                onKeyUp={this.handleKeyUp}
                 onKeyPress={this.handleKeyPress}
-                defaultValue={this.props.value} />
+                value={this.props.value} />
         </React.Fragment>;
     }
-    handleSearch = event => {
+    handleKeyUp = event => {
         this.props.updateValue(event.target.value);
     }
     handleKeyPress = event => {

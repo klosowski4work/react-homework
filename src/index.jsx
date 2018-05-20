@@ -7,6 +7,8 @@ import './index.scss';
 import { Provider } from 'react-redux';
 import store from './store';
 
+
+
 render(
     <Provider store={store}>
         <App />

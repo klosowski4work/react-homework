@@ -17,9 +17,6 @@ export class Results extends React.Component {
             results: [],
         }
     }
-    componentDidMount() {
-        this.props.dispatch(loadData());
-    }
     render() {
         const emptyElements = [1, 2, 3, 4];
         const { dispatchSearchBy, searchBy } = this.props;

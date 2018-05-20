@@ -12,12 +12,7 @@ export class Movie {
         this.title = title;
         this.type = type;
         this.releaseDate = releaseDate;
-    }
-
-    get genres() {
-        return this.type.join(', ');
-    }
-    get releaseYear() {
-        return this.releaseDate.split('-')[0];
+        this.genres = this.type.join(', ');
+        this.releaseYear = this.releaseDate.split('-')[0];
     }
 }
