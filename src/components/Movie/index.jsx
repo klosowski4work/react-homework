@@ -4,7 +4,7 @@ import './style.scss';
 
 export class Movie extends React.Component {
     render() {
-        return <div className="movie">
+        return <div className="movie" onClick={this.props.onClick}>
             <div className="movie__cover">
                 <img src={this.props.cover}></img>
             </div>

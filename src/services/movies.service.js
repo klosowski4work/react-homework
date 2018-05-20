@@ -23,6 +23,14 @@ export class MoviesService {
     static createMany(dtos) {
         return dtos.map((dto) => MoviesService.create(dto));
     }
+
+    static createMetadata(dto) {
+        return {
+            limit: dto.limit,
+            offset: dto.offset,
+            total: dto.total,
+        }
+    }
     /**
      * @param {MoviesRequestParams} params
      */
@@ -31,9 +39,11 @@ export class MoviesService {
         url.search = new URLSearchParams(params);
         return fetch(url)
             .then((res) => res.json())
-            .then((movie) => MoviesService.createMany(movie.data));
-        // .then(res => res.json())
-        // .then(movie => MoviesService.createMany(movie));
+            .then((res) => ({
+                ...MoviesService.createMetadata(res),
+                movies: MoviesService.createMany(res.data),
+            })
+            );
     }
 }
 

@@ -9,35 +9,28 @@ import { Logo } from '../../components/Logo';
 import { Header } from '../Header';
 import { Footer } from '../Footer';
 import { Results } from '../Results';
+import PropTypes from 'prop-types';
 
-// redux 
-import { reducer } from './reducer';
 import { createStore } from 'redux';
-import { connect, Provider } from 'react-redux';
+import { connect } from 'react-redux';
 
-const initialState = {
-    searchBy: 'title',
-}
 
-const store = createStore(reducer, initialState);
-
-const unsubscribe = connect((state) => {
-    return {
-        test: 'test',
-    }
-}, (dispatch) => {
-    return {
-        someFun: () => dispatch({ type: 'some_action' })
-    }
-});
-
+@connect((state) => {
+    return {    }
+})
 export class App extends React.Component {
+    static propTypes = {
+        searchBy: PropTypes.string,
+    };
 
+    constructor(params) {
+        super(params);
+    }
     myErrorHandler(error, componentStack) {
         console.log(error, componentStack);
     };
-
     render() {
+        const { searchBy, dispatchSearchBy } = this.props;
         return <ErrorBoundary onError={() => this.myErrorHandler()}>
             <div className="app">
                 <Header />
@@ -46,6 +39,6 @@ export class App extends React.Component {
                 </div>
                 <Footer />
             </div>
-        </ErrorBoundary>
+        </ErrorBoundary >
     }
 };

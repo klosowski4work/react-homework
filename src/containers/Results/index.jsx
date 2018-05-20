@@ -4,7 +4,12 @@ import { SortBy } from '../SortBy';
 import { Movie } from '../../components/Movie';
 import './style.scss';
 import { MoviesService } from '../../services/movies.service';
+import { connect } from 'react-redux';
+import { loadData } from './actions';
 
+@connect((state) => ({
+    results: state.results.results,
+}))
 export class Results extends React.Component {
     constructor(params) {
         super(params);
@@ -12,25 +17,21 @@ export class Results extends React.Component {
             results: [],
         }
     }
-
     componentDidMount() {
-        MoviesService.getMovies().then(movies => {
-            this.setState({
-                results: movies,
-            });
-        });
+        this.props.dispatch(loadData());
     }
-
     render() {
         const emptyElements = [1, 2, 3, 4];
-        return <div className="results">
+        const { dispatchSearchBy, searchBy } = this.props;
+
+        return <div className={( this.props.results.loading ? "results results--loading" : "results")}>
             <div className="results__header">
-                <span>x movies found</span>
+                <span className="results__header-movies-count">{this.props.results.total} movies found</span>
                 <SortBy />
             </div>
             <div className="results__container">
                 {
-                    this.state.results.map((movie, index) => {
+                    this.props.results.movies.map((movie, index) => {
                         return <Movie
                             key={index}
                             title={movie.title}
