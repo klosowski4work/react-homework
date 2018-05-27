@@ -1,7 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { mount, simulate } from 'enzyme';
-import { Button } from './';
+import { Button } from '../';
 
 
 let props;
