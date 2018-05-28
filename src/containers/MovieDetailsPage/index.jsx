@@ -29,7 +29,7 @@ export class MovieDetailsPage extends React.Component {
             <Header>
                 <MovieDetails />
                 <div className="movie-detail-page__search-button">
-                    <Link to='/'><Button color="red-reverse" text="SEARCH"></Button></Link>
+                    <Link to='/search'><Button color="red-reverse" text="SEARCH"></Button></Link>
                 </div>
             </Header>
             <div className="movie-detail-page__body">

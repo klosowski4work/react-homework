@@ -3,16 +3,21 @@ import { render } from 'react-dom';
 import './index.scss';
 // redux 
 import { SearchPage } from './containers/SearchPage';
-import { HashRouter as Router, Route, Switch, Link } from 'react-router-dom';
+import { HashRouter as Router, Route, Redirect, Switch, Link } from 'react-router-dom';
 import { App } from './containers/App';
 import { MovieDetailsPage } from './containers/MovieDetailsPage';
+import { Page404 } from './containers/Page404';
+
+
 
 render(
-    <Router>
+    <Router path="/search">
         <App>
             <Switch>
-                <Route exact path="/" component={SearchPage} />
+                <Route exact path="/search" component={SearchPage} />
                 <Route path="/film/:id" component={MovieDetailsPage} />
+                <Redirect from="/" to="search" />
+                <Route path="*" component={Page404} />
             </Switch>
         </App>
     </Router>,
