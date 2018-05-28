@@ -16,8 +16,13 @@ render(
             <Switch>
                 <Route exact path="/search" component={SearchPage} />
                 <Route path="/film/:id" component={MovieDetailsPage} />
+<<<<<<< HEAD
                 <Redirect from="/" to="search" />
                 <Route path="*" component={Page404} />
+=======
+                <Route path="*" component={Page404} />
+                <Redirect from="/" to="search" />
+>>>>>>> e40620d6f4236240c78227c64b7665bd08997960
             </Switch>
         </App>
     </Router>,
