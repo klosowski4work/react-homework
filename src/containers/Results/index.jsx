@@ -5,7 +5,7 @@ import { Movie } from '../../components/Movie';
 import './style.scss';
 import { MoviesService } from '../../services/movies.service';
 import { connect } from 'react-redux';
-import { loadData } from './actions';
+import { Link } from 'react-router-dom';
 
 @connect((state) => ({
     results: state.results.results,
@@ -21,7 +21,7 @@ export class Results extends React.Component {
         const emptyElements = [1, 2, 3, 4];
         const { dispatchSearchBy, searchBy } = this.props;
 
-        return <div className={( this.props.results.loading ? "results results--loading" : "results")}>
+        return <div className={(this.props.results.loading ? "results results--loading" : "results")}>
             <div className="results__header">
                 <span className="results__header-movies-count">{this.props.results.total} movies found</span>
                 <SortBy />
@@ -29,13 +29,16 @@ export class Results extends React.Component {
             <div className="results__container">
                 {
                     this.props.results.movies.map((movie, index) => {
-                        return <Movie
-                            key={index}
-                            title={movie.title}
-                            type={movie.genres}
-                            cover={movie.cover}
-                            releaseDate={movie.releaseYear}
-                        />
+
+                        return <Link key={index} to={{ pathname: `/film/${movie.id}` }}>
+                            <Movie
+                                key={index}
+                                title={movie.title}
+                                type={movie.genres}
+                                cover={movie.cover}
+                                releaseDate={movie.releaseYear}
+                            />
+                        </Link>
                     })
                 }
                 {

@@ -1,17 +1,20 @@
 import React from 'react';
 import { render } from 'react-dom';
-import { App } from './containers/App';
-
 import './index.scss';
 // redux 
-import { Provider } from 'react-redux';
-import store from './store';
-
-
+import { SearchPage } from './containers/SearchPage';
+import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
+import { App } from './containers/App';
+import { MovieDetailsPage } from './containers/MovieDetailsPage';
 
 render(
-    <Provider store={store}>
-        <App />
-    </Provider>,
-    document.getElementById('app')
+    <Router>
+        <App>
+            <Switch>
+                <Route exact path="/" component={SearchPage} />
+                <Route path="/film/:id" component={MovieDetailsPage} />
+            </Switch>
+        </App>
+    </Router>,
+    document.getElementById('searchPage')
 );

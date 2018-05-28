@@ -3,11 +3,6 @@
 exports[`Header component should render component 1`] = `
 <div
   className="header"
-  style={
-    Object {
-      "backgroundImage": "url('image')",
-    }
-  }
 >
   <div
     className="header__container"
@@ -17,49 +12,6 @@ exports[`Header component should render component 1`] = `
     >
       netflixroulette
     </span>
-    <div
-      className="search-movie"
-    >
-      <h2>
-        FIND YOUR MOVIE
-      </h2>
-      <input
-        className="search-field__input"
-        type="text"
-      />
-      <div
-        className="search-movie__buttons"
-      >
-        <div
-          className="search-movie__buttons-left-side"
-        >
-          <h3>
-            SEARCH BY
-          </h3>
-          <button
-            className="button button--small  "
-            onClick={[Function]}
-            type="button"
-          >
-            TITLE
-          </button>
-          <button
-            className="button button--small  button--grey"
-            onClick={[Function]}
-            type="button"
-          >
-            GENRE
-          </button>
-        </div>
-        <button
-          className="button   "
-          onClick={[Function]}
-          type="button"
-        >
-          SEARCH
-        </button>
-      </div>
-    </div>
   </div>
 </div>
 `;

@@ -7,7 +7,7 @@ require("babel-polyfill");
 module.exports = env => {
     const isProduction = false;
     const config = {
-        context: path.resolve(__dirname, "src"),
+        context: path.join(__dirname, "src"),
 
         mode: isProduction ? "production" : "development",
         devtool: isProduction ? "none" : "source-map",
@@ -20,7 +20,7 @@ module.exports = env => {
 
         output: {
             filename: "bundle.js",
-            path: path.resolve(__dirname, "dist")
+            path: path.join(__dirname, "./dist")
         },
 
         module: {
@@ -56,7 +56,6 @@ module.exports = env => {
         plugins: [
             new HtmlWebpackPlugin({
                 title: 'React epam course',
-                hash: true,
                 template: './index.html'
             }),
             new MiniCssExtractPlugin({
@@ -67,6 +66,12 @@ module.exports = env => {
             new webpack.NamedModulesPlugin(),
         ],
 
+        devServer: {
+            inline: true,
+            contentBase: './',
+            historyApiFallback: true,
+        },
+        
         watch: true
 
     }

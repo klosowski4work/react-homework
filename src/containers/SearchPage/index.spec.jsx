@@ -1,17 +1,17 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import { App } from './';
+import { SearchPage } from './';
 import { Header } from '../Header';
 
 jest.disableAutomock();
 jest.mock('../../../images/net.jpg', () => 'image');
 
-describe('App component', () => {
+describe('SearchPage component', () => {
     it('should render component', () => {
-        expect(renderer.create(<App />).toJSON()).toMatchSnapshot();
+        expect(renderer.create(<SearchPage />).toJSON()).toMatchSnapshot();
     });
     it('call myErrorHandler', () => {
-        const instance = new App();
+        const instance = new SearchPage();
         instance.myErrorHandler('error', 'componentStack');
     });
 });
