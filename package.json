@@ -15,6 +15,7 @@
   "dependencies": {
     "@redux-offline/redux-offline": "^2.3.3",
     "babel-polyfill": "^6.26.0",
+    "babel-preset-latest": "^6.24.1",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
     "react-redux": "^5.0.7",

@@ -3,7 +3,7 @@ import { render } from 'react-dom';
 import './index.scss';
 // redux 
 import { SearchPage } from './containers/SearchPage';
-import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
+import { HashRouter as Router, Route, Switch, Link } from 'react-router-dom';
 import { App } from './containers/App';
 import { MovieDetailsPage } from './containers/MovieDetailsPage';
 

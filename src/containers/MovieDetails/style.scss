@@ -1,3 +1,55 @@
+@import '../../components/common/style/_colors.scss';
 .movie-detail {
     color: white;
+    padding: 5rem 0px;
+    margin: 0 -5rem;
+    display: flex;
+    justify-content: space-around;
+    &__poster {
+        img {
+            width: 30rem;
+        }
+    }
+    &__details {
+        max-width: 60%;
+        padding: 3rem;
+    }
+    &__header {
+        color: $color-main;
+        font-size: 4rem;
+        display: flex;
+    }
+    &__score {
+        color: seagreen;
+        font-size: 1.8rem;
+        margin: 0 2rem;
+        min-height: 4.2rem;
+        min-width: 4.2rem;
+        max-height: 4.2rem;
+        max-width: 4.2rem;
+        border: 1px solid seagreen;
+        text-align: center;
+        padding-top: 1.2rem;
+        border-radius: 50%;
+        line-height: 1;
+    }
+    &__tagline {
+        font-size: 2rem;
+        color: rgba(255, 255, 255, 0.8);
+        line-height: 1.5
+    }
+    &__date-time {
+        font-size: 1.8rem;
+        display: flex;
+        margin-top: 2rem;
+    }
+    &__runtime {
+        margin-left: 2rem;
+    }
+    &__description {
+        margin-top: 3rem;
+        font-size: 1.8rem;
+        line-height: 1.2;
+        color: rgba(255, 255, 255, 0.8);
+    }
 }

@@ -45,10 +45,17 @@ export class MoviesService {
             })
             );
     }
-
+    static createDetails(dto) {
+        return {
+            ...dto,
+            score: dto.vote_average,
+            releaseYear: dto.release_date.split('-')[0],
+        }
+    }
     static getMovieDetails(id) {
         const url = new URL(`http://react-cdp-api.herokuapp.com/movies/${id}`);
         return fetch(url)
-            .then((res) => res.json());
+            .then((res) => res.json())
+            .then((res) => MoviesService.createDetails(res));
     }
 }
