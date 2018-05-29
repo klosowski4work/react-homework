@@ -6,6 +6,7 @@ export const RESULTS_ACTIONS = {
     LOAD_DATA_START: 'results.loadData.start',
     LOAD_DATA_SUCCESS: 'results.loadData.success',
     LOAD_DATA_ERROR: 'results.loadData.error',
+    CLEAR_DATA: 'results.loadData.clear',
 }
 
 export const fetch = () => ({
@@ -22,6 +23,9 @@ export const loadDataSuccess = (payload) => ({
 })
 export const loadDataError = () => ({
     type: RESULTS_ACTIONS.LOAD_DATA_ERROR
+})
+export const clearData = () => ({
+    type: RESULTS_ACTIONS.CLEAR_DATA
 })
 export function loadData(params) {
     return async dispatch => {

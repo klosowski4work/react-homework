@@ -36,7 +36,7 @@ export class MoviesService {
      */
     static getMovies(params) {
         const url = new URL('http://react-cdp-api.herokuapp.com/movies');
-        url.search = new URLSearchParams(params);
+        url.search = params instanceof URLSearchParams ? params : new URLSearchParams(params);
         return fetch(url)
             .then((res) => res.json())
             .then((res) => ({

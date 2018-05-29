@@ -8,7 +8,7 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 
 @connect((state) => ({
-    results: state.results.results,
+    results: state.resultsContainer.results,
 }))
 export class Results extends React.Component {
     constructor(params) {
@@ -28,8 +28,10 @@ export class Results extends React.Component {
             </div>
             <div className="results__container">
                 {
+                    this.props.results.movies.length === 0 ? <div className="results__no-found" >No films found</div> : ''
+                }
+                {
                     this.props.results.movies.map((movie, index) => {
-
                         return <Link key={index} to={{ pathname: `/film/${movie.id}` }}>
                             <Movie
                                 key={index}

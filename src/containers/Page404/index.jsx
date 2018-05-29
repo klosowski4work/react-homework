@@ -2,8 +2,8 @@
 import React from 'react';
 import { Button } from '../../components/Button';
 import { Results } from '../Results';
-import { Footer } from '../Footer';
-import { Header } from '../Header';
+import { Footer } from '../../components/Footer';
+import { Header } from '../../components/Header';
 import './style.scss';
 
 import { Link } from 'react-router-dom';

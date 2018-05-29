@@ -51,6 +51,12 @@
             animation: spin 2s linear infinite;
         }
     }
+    &__no-found {
+        font-size: 5.2rem;
+        width: 100%;
+        text-align: center;
+        margin-top: 10rem;
+    }
 }
 
 @keyframes spin {

@@ -40,6 +40,17 @@ export default function reducer(state = {
                     loading: false,
                 },
             };
+        case RESULTS_ACTIONS.CLEAR_DATA:
+            return {
+                ...state,
+                results: {
+                    movies: [],
+                    limit: 0,
+                    offset: 0,
+                    total: 0,
+                    loading: false,
+                }
+            }
         default:
             return state;
     }
