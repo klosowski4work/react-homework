@@ -10,9 +10,10 @@
         width: 100%;
         padding: 0 15%;
         display: inline-flex;
+        height: 3.8rem;
         background-color: $color-light-grey;
         justify-content: space-between;
-        align-items: baseline;
+        align-items: center;
         color: $color-dark-grey;
         &-movies-count {
             font-size: 1.8rem;

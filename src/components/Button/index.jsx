@@ -10,7 +10,7 @@ export class Button extends React.Component {
             <button
                 className={this.className}
                 type="button"
-                onClick={() => this.props.onClick()}>
+                onClick={() => this.props.onClick && this.props.onClick()}>
                 {this.props.text}
             </button>
         </React.Fragment >;

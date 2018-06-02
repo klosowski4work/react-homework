@@ -3,10 +3,6 @@ import React from 'react';
 import './style.scss';
 import { connect } from 'react-redux';
 
-@connect((state) => ({
-    movie: state.movieDetails.movie,
-    loading: state.movieDetails.loading,
-}))
 export class MovieDetails extends React.Component {
     static defaultProps = {
         poster: '',

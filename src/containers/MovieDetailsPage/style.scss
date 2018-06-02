@@ -1,11 +1,4 @@
 .movie-detail-page {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    &__body {
-        position: relative;
-        flex-grow: 1;
-    }
     &__search-button {
         position: absolute;
         right: 0px;

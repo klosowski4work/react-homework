@@ -1,9 +1,9 @@
-.search-page {
+.app {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    justify-content: space-between;
     &__body {
-        position: relative;
         flex-grow: 1;
     }
 }

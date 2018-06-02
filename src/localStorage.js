@@ -1,4 +1,4 @@
-import { SORT_BY } from './containers/SortBy';
+import { SORT_BY } from './components/SortBy';
 
 export const loadState = () => {
     try {

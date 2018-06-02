@@ -1,5 +1,4 @@
 
-import './style.scss';
 import React from 'react';
 import { Button } from '../../components/Button';
 import { SearchField } from '../../components/SearchField';
@@ -12,16 +11,18 @@ import { SearchMovie } from '../SearchMovie';
 import { createStore } from 'redux';
 import { connect } from 'react-redux';
 import { searchBy, search } from '../SearchMovie/actions';
-import { sortBy } from '../SortBy/actions';
+import { sortBy } from '../../components/SortBy/actions';
 import { loadData, clearData } from '../Results/actions';
-@connect((state) => {
-    return {}
-})
+
+@connect((state) => ({
+    sortBy: state.sort.sortBy,
+    searchBy: state.searchMovie.searchBy,
+    searchBar: state.searchMovie.searchBar,
+}))
 export class SearchPage extends React.Component {
     static propTypes = {
         searchBy: PropTypes.string,
     };
-
     constructor(params) {
         super(params);
     }
@@ -39,13 +40,7 @@ export class SearchPage extends React.Component {
     render() {
         const { searchBy, dispatchSearchBy } = this.props;
         return <div className="search-page">
-            <Header>
-                <SearchMovie />
-            </Header>
-            <div className="search-page__body">
-                <Results />
-            </div>
-            <Footer />
+            <SearchMovie {...this.props} />
         </div>
     }
 };

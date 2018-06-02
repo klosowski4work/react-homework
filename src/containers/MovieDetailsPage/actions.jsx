@@ -18,12 +18,13 @@ export const loadDataSuccess = (payload) => ({
 export const loadDataError = () => ({
     type: MOVIE_DETAILS_ACTIONS.LOAD_DATA_ERROR
 })
-export function loadData(id) {
+export function loadData(id, onSuccess) {
     return async dispatch => {
         dispatch(loadDataStart());
         try {
-            const results = await MoviesService.getMovieDetails(id)
-            dispatch(loadDataSuccess(results))
+            const results = await MoviesService.getMovieDetails(id);
+            dispatch(loadDataSuccess(results));
+            if (onSuccess) onSuccess(results);
         } catch (error) {
             dispatch(loadDataError())
         }

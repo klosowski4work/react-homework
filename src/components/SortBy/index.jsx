@@ -1,21 +1,14 @@
 
 import React from 'react';
-import { Button } from '../../components/Button';
+import { Button } from '../Button';
 import './style.scss';
 import { connect } from 'react-redux';
-import { sortBy as sortByAction } from './actions';
-import { loadData } from '../Results/actions';
 
 export const SORT_BY = {
     RELEASE_DATA: 'release_date',
     RATING: 'vote_average',
 }
 
-@connect((state) => ({
-    sortBy: state.sort.sortBy,
-    searchBy: state.searchMovie.searchBy,
-    searchBar: state.searchMovie.searchBar,
-}))
 export class SortBy extends React.Component {
     render() {
         return <div className="sort-by">
@@ -34,15 +27,8 @@ export class SortBy extends React.Component {
         return this.props.sortBy === type;
     }
     sortBy(type) {
-        const params = {
-            sortBy: type,
-            searchBy: this.props.searchBy,
-            search: this.props.searchBar,
-            sortOrder: 'desc',
-        }
         if (!this.isSelected(type)) {
-            this.props.dispatch(sortByAction(type));
-            this.props.dispatch(loadData(params));
+            this.props.onSortByChange(type);
         }
     }
 };

@@ -7,16 +7,12 @@ import { searchBy, search } from './actions';
 import { connect } from 'react-redux';
 import { loadData } from '../Results/actions';
 import { history } from '../../history';
+
 export const SEARCH_BY = {
     TITLE: 'title',
     GENRE: 'genres',
 }
 
-@connect((state) => ({
-    sortBy: state.sort.sortBy,
-    searchBy: state.searchMovie.searchBy,
-    searchBar: state.searchMovie.searchBar,
-}))
 export class SearchMovie extends React.Component {
     constructor(params) {
         super(params);
