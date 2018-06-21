@@ -1,11 +1,12 @@
 import React from 'react';
 import { renderToString } from 'react-dom/server';
-import { StaticRouter } from 'react-router-dom';
+import { StaticRouter as Router } from 'react-router-dom';
 // import configureStore from './containers/configureStore';
+import App from './containers/App';
 import store from './store';
 
 function renderHTML(html, preloadedState) {
-  return `
+    return `
       <!doctype html>
       <html>
         <head>
@@ -27,22 +28,22 @@ function renderHTML(html, preloadedState) {
 }
 
 export default function serverRenderer() {
-  return (req, res) => {
-    const context = {};
-    // eslint-disable-next-line react/jsx-filename-extension
-    const root = <div>qwe</div>;
-    const htmlString = renderToString(root);
+    return (req, res) => {
+        const context = {};
+        // eslint-disable-next-line react/jsx-filename-extension
+        const root = <App context={context} location={req.url} Router={Router} store={store} />;
+        const htmlString = renderToString(root);
 
-    if (context.url) {
-      res.writeHead(302, {
-        Location: context.url,
-      });
-      res.end();
-      return;
-    }
+        if (context.url) {
+            res.writeHead(302, {
+                Location: context.url,
+            });
+            res.end();
+            return;
+        }
 
-    const preloadedState = store.getState();
+        const preloadedState = store.getState();
 
-    res.send(renderHTML(htmlString, preloadedState));
-  };
+        res.send(renderHTML(htmlString, preloadedState));
+    };
 }

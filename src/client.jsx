@@ -7,10 +7,6 @@ import store from './store';
 import './index.scss';
 
 hydrate(
-    <Router>
-        <Provider store={store}>
-            <App />
-        </Provider>
-    </Router>,
+    <App store={store} Router={Router} />,
     document.getElementById('root')
 );

@@ -40,11 +40,11 @@ module.exports = {
         new webpack.NamedModulesPlugin(),
     ],
 
-    devServer: {
-        inline: true,
-        contentBase: './',
-        historyApiFallback: true,
-    },
+    // devServer: {
+    //     inline: true,
+    //     contentBase: './',
+    //     historyApiFallback: true,
+    // },
 
     watch: true
 

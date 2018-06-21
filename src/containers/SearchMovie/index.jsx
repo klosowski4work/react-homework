@@ -6,7 +6,7 @@ import './style.scss';
 import { searchBy, search } from './actions';
 import { connect } from 'react-redux';
 import { loadData } from '../Results/actions';
-import { history } from '../../history';
+// import { history } from '../../history';
 
 export const SEARCH_BY = {
     TITLE: 'title',
@@ -60,6 +60,6 @@ export class SearchMovie extends React.Component {
         this.props.dispatch(search(text));
         this.props.dispatch(loadData(params));
 
-        history.push(`/search?${new URLSearchParams(params)}`);
+        // history.push(`/search?${new URLSearchParams(params)}`);
     }
 };
