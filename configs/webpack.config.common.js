@@ -2,7 +2,6 @@ const path = require("path");
 const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-require("babel-polyfill");
 
 const isDevMod = process.env.NODE_ENV === 'development';
 
@@ -18,7 +17,7 @@ module.exports = {
 
     output: {
         filename: 'bundle.js',
-        path: path.join(__dirname, '../built'),
+        path: path.join(__dirname, "../built"),
     },
 
     module: {
@@ -40,11 +39,11 @@ module.exports = {
         new webpack.NamedModulesPlugin(),
     ],
 
-    // devServer: {
-    //     inline: true,
-    //     contentBase: './',
-    //     historyApiFallback: true,
-    // },
+    devServer: {
+        inline: true,
+        contentBase: './',
+        historyApiFallback: true,
+    },
 
     watch: true
 

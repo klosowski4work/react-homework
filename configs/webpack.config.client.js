@@ -2,27 +2,27 @@ const merge = require('webpack-merge');
 const common = require('./webpack.config.common');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
+require("babel-core/register");
+require("babel-polyfill");
+
 const isDevMod = process.env.NODE_ENV === 'development';
 
 module.exports = merge(common, {
     name: 'client',
     target: 'web',
 
-    entry: [isDevMod && 'webpack-hot-middleware/client', './client.jsx'].filter(Boolean),
+    entry: [isDevMod && 'webpack-hot-middleware/client', 'babel-polyfill', './client.jsx'].filter(Boolean),
 
     module: {
         rules: [
             {
                 test: /\.(jpg)$/,
                 exclude: /node_modules/,
-                use: [
-                    {
-                        loader: 'file-loader',
-                        options: {
-                            name: '[path][name]-[hash:8].[ext]'
-                        },
-                    },
-                ]
+                loader: 'file-loader',
+                options: {
+                    name: '[path][name].[ext]',
+                    publicPath: '/',
+                },
             },
             {
                 test: /\.scss/,

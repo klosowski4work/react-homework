@@ -73,5 +73,4 @@ class App extends React.Component {
         </Provider>
     };
 }
-
 export default hot(module)(App);

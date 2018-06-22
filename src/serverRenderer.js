@@ -6,13 +6,13 @@ import App from './containers/App';
 import store from './store';
 
 function renderHTML(html, preloadedState) {
-    return `
+  return `
       <!doctype html>
       <html>
         <head>
           <meta charset=utf-8>
           <title>React Server Side Rendering</title>
-          ${process.env.NODE_ENV === 'development' ? '' : '<link href="/css/main.css" rel="stylesheet" type="text/css">'}
+          <link href="/main.css" rel="stylesheet" type="text/css">
         </head>
         <body>
           <div id="root">${html}</div>
@@ -21,29 +21,29 @@ function renderHTML(html, preloadedState) {
             // http://redux.js.org/docs/recipes/ServerRendering.html#security-considerations
             window.PRELOADED_STATE = ${JSON.stringify(preloadedState).replace(/</g, '\\u003c')}
           </script>
-          <script src="/js/main.js"></script>
+          <script src="/bundle.js"></script>
         </body>
       </html>
   `;
 }
 
 export default function serverRenderer() {
-    return (req, res) => {
-        const context = {};
-        // eslint-disable-next-line react/jsx-filename-extension
-        const root = <App context={context} location={req.url} Router={Router} store={store} />;
-        const htmlString = renderToString(root);
+  return (req, res) => {
+    const context = {};
+    // eslint-disable-next-line react/jsx-filename-extension
+    const root = <App context={context} location={req.url} Router={Router} store={store} />;
+    const htmlString = renderToString(root);
 
-        if (context.url) {
-            res.writeHead(302, {
-                Location: context.url,
-            });
-            res.end();
-            return;
-        }
+    if (context.url) {
+      res.writeHead(302, {
+        Location: context.url,
+      });
+      res.end();
+      return;
+    }
 
-        const preloadedState = store.getState();
+    const preloadedState = store.getState();
 
-        res.send(renderHTML(htmlString, preloadedState));
-    };
+    res.send(renderHTML(htmlString, preloadedState));
+  };
 }
