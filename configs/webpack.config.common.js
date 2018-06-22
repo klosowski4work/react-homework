@@ -1,7 +1,5 @@
 const path = require("path");
 const webpack = require("webpack");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const isDevMod = process.env.NODE_ENV === 'development';
 
@@ -17,14 +15,14 @@ module.exports = {
 
     output: {
         filename: 'bundle.js',
-        path: path.join(__dirname, "../built"),
+        path: path.resolve(__dirname, "../built"),
     },
 
     module: {
         rules: [
             {
                 test: /\.(js|jsx)?$/,
-                loader: "babel-loader",
+                loader: "babel-loader", 
                 exclude: /node_modules/,
                 query: {
                     plugins: ['transform-decorators-legacy'],
@@ -35,16 +33,14 @@ module.exports = {
     },
 
     plugins: [
-        new webpack.HotModuleReplacementPlugin(),
         new webpack.NamedModulesPlugin(),
     ],
 
     devServer: {
         inline: true,
-        contentBase: './',
+        contentBase: path.resolve(__dirname, "../built"),
         historyApiFallback: true,
     },
-
     watch: true
 
 }

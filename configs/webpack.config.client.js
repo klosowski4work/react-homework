@@ -1,5 +1,7 @@
 const merge = require('webpack-merge');
 const common = require('./webpack.config.common');
+
+const webpack = require("webpack");
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 require("babel-core/register");
@@ -11,7 +13,7 @@ module.exports = merge(common, {
     name: 'client',
     target: 'web',
 
-    entry: [isDevMod && 'webpack-hot-middleware/client', 'babel-polyfill', './client.jsx'].filter(Boolean),
+    entry: ['babel-polyfill', './client.jsx', isDevMod && 'webpack-hot-middleware/client'].filter(Boolean),
 
     module: {
         rules: [
@@ -32,9 +34,9 @@ module.exports = merge(common, {
         ]
     },
     plugins: [
+        isDevMod && new webpack.HotModuleReplacementPlugin(),
         new MiniCssExtractPlugin({
             filename: '[name].css',
-            chunkFilename: '[id].css'
         })
     ]
 });

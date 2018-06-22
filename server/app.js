@@ -15,11 +15,11 @@ if (process.env.NODE_ENV === 'development') {
     app.use(webpackHotMiddleware(compiler.compilers.find(c => c.name === 'client')));
     app.use(webpackHotServerMiddleware(compiler));
 } else {
-    console.log('serverRender');
-    const serverRenderer = require('../dist/serverRenderer').default;
+    // console.log('serverRender');
+    // const serverRenderer = require('../dist/serverRenderer').default;
 
-    app.use(express.static('dist'));
-    app.use(serverRenderer());
+    // app.use(express.static('dist'));
+    // app.use(serverRenderer());
 }
 
 module.exports = app;

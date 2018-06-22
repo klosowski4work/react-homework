@@ -1,38 +1,24 @@
 import React from 'react';
-import { renderToString } from 'react-dom/server';
+import { renderToString, renderToStaticMarkup } from 'react-dom/server';
 import { StaticRouter as Router } from 'react-router-dom';
 // import configureStore from './containers/configureStore';
 import App from './containers/App';
 import store from './store';
-
-function renderHTML(html, preloadedState) {
-  return `
-      <!doctype html>
-      <html>
-        <head>
-          <meta charset=utf-8>
-          <title>React Server Side Rendering</title>
-          <link href="/main.css" rel="stylesheet" type="text/css">
-        </head>
-        <body>
-          <div id="root">${html}</div>
-          <script>
-            // WARNING: See the following for security issues around embedding JSON in HTML:
-            // http://redux.js.org/docs/recipes/ServerRendering.html#security-considerations
-            window.PRELOADED_STATE = ${JSON.stringify(preloadedState).replace(/</g, '\\u003c')}
-          </script>
-          <script src="/bundle.js"></script>
-        </body>
-      </html>
-  `;
-}
+import Html from './containers/Html';
+import './index.scss';
 
 export default function serverRenderer() {
   return (req, res) => {
     const context = {};
-    // eslint-disable-next-line react/jsx-filename-extension
-    const root = <App context={context} location={req.url} Router={Router} store={store} />;
-    const htmlString = renderToString(root);
+    const scripts = ['bundle.js'];
+    const preloadedState = store.getState();
+
+    const appMarkup = renderToString(<App context={context} location={req.url} Router={Router} store={store} />);
+    const html = renderToStaticMarkup(
+      <Html children={appMarkup}
+        scripts={scripts}
+        preloadedState={preloadedState} />
+    );
 
     if (context.url) {
       res.writeHead(302, {
@@ -42,8 +28,6 @@ export default function serverRenderer() {
       return;
     }
 
-    const preloadedState = store.getState();
-
-    res.send(renderHTML(htmlString, preloadedState));
+    res.send(`<!doctype html>${html}`);
   };
 }

@@ -1,3 +1,4 @@
+import nodeExternals from 'webpack-node-externals';
 const merge = require('webpack-merge');
 const common = require('./webpack.config.common');
 
@@ -6,7 +7,8 @@ const isDevMod = process.env.NODE_ENV === 'development';
 module.exports = merge(common, {
     name: 'server',
     target: 'node',
-    entry: './serverRenderer.js',
+    externals: [nodeExternals()],
+    entry: ['babel-polyfill', './serverRenderer.js'],
     output: {
         filename: 'serverRenderer.js',
         libraryTarget: 'commonjs2',
