@@ -43,9 +43,6 @@ export class Results extends React.Component {
             </div>
             <div className="results__container">
                 {
-                    this.props.results.movies.length === 0 ? <div className="results__no-found" >No films found</div> : ''
-                }
-                {
                     this.props.results.movies.map((movie, index) => {
                         return <Link key={index} to={{ pathname: `/film/${movie.id}` }}>
                             <Movie
@@ -62,6 +59,9 @@ export class Results extends React.Component {
                     emptyElements.map((key) => {
                         return <div key={key} className="movie movie--empty"></div>
                     })
+                }
+                {
+                    this.props.results.movies.length === 0 ? <div className="results__no-found" >No films found</div> : ''
                 }
             </div>
         </div>
