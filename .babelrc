@@ -3,7 +3,8 @@
         "env",
         "react",
         "latest",        
-        "stage-2"
+        "stage-2",
+        "flow"
     ],
     "plugins": [
         "transform-decorators-legacy"

@@ -1,7 +1,22 @@
+//@flow
 import React from 'react';
 import './style.scss';
 
-export class Movie extends React.Component {
+export type MovieProps = {
+    cover: string,
+    title: string,
+    type: string,
+    releaseDate: string,
+    onClick: () => void,
+};
+
+export class Movie extends React.Component<MovieProps> {
+    static defaultProps = {
+        cover: '',
+        title: '',
+        type: '',
+        releaseDate: '',
+    };
     render() {
         return <div className="movie" onClick={this.props.onClick}>
             <div className="movie__cover">
@@ -14,10 +29,4 @@ export class Movie extends React.Component {
             </div>
         </div>
     }
-};
-Movie.defaultProps = {
-    cover: '',
-    title: '',
-    type: '',
-    releaseDate: '',
 };

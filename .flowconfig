@@ -1,0 +1,19 @@
+[ignore]
+**/*.spec.*
+.*/Cypress
+.*/lib
+**/*.scss
+[include]
+
+[libs]
+
+[lints]
+
+[options]
+module.name_mapper='^[./a-zA-Z0-9$_-]+\.\(bmp\|gif\|jpg\|jpeg\|png\|psd\|svg\|webp\|m4v\|mov\|mp4\|mpeg\|mpg\|webm\|aac\|aiff\|caf\|m4a\|mp3\|wav\|html\|pdf\)$' -> 'RelativeImageStub'
+module.file_ext=.scss
+module.name_mapper.extension='scss' -> 'empty/object'
+module.file_ext=.js
+module.file_ext=.jsx
+module.file_ext=.json
+[strict]

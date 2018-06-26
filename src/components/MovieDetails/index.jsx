@@ -1,9 +1,20 @@
-
+//@flow
 import React from 'react';
 import './style.scss';
-import { connect } from 'react-redux';
+import Movie from '../../models/movie.model';
 
-export class MovieDetails extends React.Component {
+type MovieDetailsProps = {
+    poster: string,
+    title: string,
+    score: string,
+    tagline: string,
+    releaseYear: string,
+    runtime: string,
+    overview: string,
+    movie: Movie,
+}
+
+export class MovieDetails extends React.Component<MovieDetailsProps> {
     static defaultProps = {
         poster: '',
         title: '',
@@ -13,7 +24,6 @@ export class MovieDetails extends React.Component {
         runtime: '',
         overview: '',
     };
-
     render() {
         return <div className="movie-detail">
             <div className="movie-detail__poster">

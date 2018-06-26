@@ -5,11 +5,13 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server",
-    "build": "webpack --env.mode=production",
+    "build": "babel src/ -d lib/",
+    "prepublish": "npm run build",
     "test": "jest",
     "test:watch": "jest -u --watch",
     "cypress": "node_modules/.bin/cypress open",
-    "lint": "eslint ./ --cache --ignore-pattern .gitignore --fix"
+    "lint": "eslint ./ --cache --ignore-pattern .gitignore --fix",
+    "flow": "flow"
   },
   "author": "piotr_klosowski@epam.com",
   "license": "ISC",
@@ -34,12 +36,14 @@
   "devDependencies": {
     "ajv": "^6.5.0",
     "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.2.5",
     "babel-jest": "^22.4.4",
     "babel-loader": "^7.1.4",
     "babel-plugin-transform-decorators-legacy": "^1.3.4",
     "babel-preset-env": "^1.6.1",
+    "babel-preset-flow": "^6.23.0",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
     "css-loader": "^0.28.11",
@@ -51,6 +55,7 @@
     "eslint-plugin-react": "^7.10.0",
     "extract-text-webpack-plugin": "^3.0.2",
     "file-loader": "^1.1.11",
+    "flow-bin": "^0.75.0",
     "html-webpack-plugin": "^3.2.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^22.4.3",
