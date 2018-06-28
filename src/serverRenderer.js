@@ -6,18 +6,27 @@ import App from './containers/App';
 import store from './store';
 import Html from './containers/Html';
 import './index.scss';
+import { searchBy, search } from '../src/containers/SearchMovie/actions';
+import { sortBy } from '../src/components/SortBy/actions';
 
 export default function serverRenderer() {
-  return (req, res) => {
+  return async (req, res) => {
     const context = {};
     const scripts = ['bundle.js'];
-    const preloadedState = store.getState();
+
+    if (req.url.match(/\/search\//)) {
+      const queryParams = req.url.replace('/search/', '');
+      const parsedQuery = qs.parse(queryParams);
+      store.dispatch(searchBy(parsedQuery.searchBy));
+      store.dispatch(search(parsedQuery.sortBy));
+      await store.dispatch(loadData(queryParams));
+    }
 
     const appMarkup = renderToString(<App context={context} location={req.url} Router={Router} store={store} />);
     const html = renderToStaticMarkup(
       <Html children={appMarkup}
         scripts={scripts}
-        preloadedState={preloadedState} />
+        preloadedState={store.getState()} />
     );
 
     if (context.url) {
